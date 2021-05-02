@@ -1,0 +1,1222 @@
+04/26/2020, 15:55:59 ##################### Start ... ##################### 
+04/26/2020, 15:55:59 Reading Data Started ... 
+04/26/2020, 15:56:06 Feat imp... 
+04/26/2020, 15:56:39 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/26/2020, 15:56:39 Folding 
+04/26/2020, 15:56:52 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/26/2020, 15:56:56 Load models ... 
+04/26/2020, 15:57:00 Training ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 505, in train
+    outputs = model(inputs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "src.py", line 317, in forward
+    outputs = self.last_fc(outputs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/functional.py", line 1372, in linear
+    output = input.matmul(weight.t())
+RuntimeError: size mismatch, m1: [32000 x 256], m2: [512 x 11] at /opt/conda/conda-bld/pytorch_1579022060824/work/aten/src/THC/generic/THCTensorMathBlas.cu:290
+04/26/2020, 15:58:38 ##################### Start ... ##################### 
+04/26/2020, 15:58:38 Reading Data Started ... 
+04/26/2020, 15:58:43 Feat imp... 
+04/26/2020, 15:59:09 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/26/2020, 15:59:09 Folding 
+04/26/2020, 15:59:15 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/26/2020, 15:59:17 Load models ... 
+04/26/2020, 15:59:19 Training ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 505, in train
+    outputs = model(inputs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "src.py", line 314, in forward
+    outputs, hidden = self.rnn2(outputs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/rnn.py", line 713, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/rnn.py", line 180, in check_forward_args
+    self.check_input(input, batch_sizes)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/rnn.py", line 159, in check_input
+    self.input_size, input.size(-1)))
+RuntimeError: input.size(-1) must be equal to input_size. Expected 512, got 256
+04/26/2020, 15:59:56 ##################### Start ... ##################### 
+04/26/2020, 15:59:56 Reading Data Started ... 
+04/26/2020, 15:59:59 Feat imp... 
+04/26/2020, 16:00:31 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/26/2020, 16:00:31 Folding 
+04/26/2020, 16:00:43 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/26/2020, 16:00:45 Load models ... 
+04/26/2020, 16:00:49 Training ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 505, in train
+    outputs = model(inputs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "src.py", line 317, in forward
+    outputs = self.last_fc(outputs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/torch/nn/functional.py", line 1372, in linear
+    output = input.matmul(weight.t())
+RuntimeError: size mismatch, m1: [32000 x 256], m2: [512 x 11] at /opt/conda/conda-bld/pytorch_1579022060824/work/aten/src/THC/generic/THCTensorMathBlas.cu:290
+04/26/2020, 16:05:48 ##################### Start ... ##################### 
+04/26/2020, 16:05:49 Reading Data Started ... 
+04/26/2020, 16:05:55 Feat imp... 
+04/26/2020, 16:06:29 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/26/2020, 16:06:29 Folding 
+04/26/2020, 16:06:35 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/26/2020, 16:06:39 Load models ... 
+04/26/2020, 16:06:42 Training ... 
+04/26/2020, 16:10:57 epoch: 0; train_loss: 0.15474; vld_loss: 0.06816; score: 0.93618 in 254.12s +
+04/26/2020, 16:12:17 ##################### Start ... ##################### 
+04/26/2020, 16:12:17 Reading Data Started ... 
+04/26/2020, 16:12:21 Feat imp... 
+04/26/2020, 16:12:48 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/26/2020, 16:12:48 Folding 
+04/26/2020, 16:12:52 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/26/2020, 16:12:53 Load models ... 
+04/26/2020, 16:12:56 Training ... 
+04/26/2020, 16:15:14 epoch: 0; train_loss: 0.21109; vld_loss: 0.06016; score: 0.93795 in 137.59s +
+04/26/2020, 16:17:32 epoch: 1; train_loss: 0.05450; vld_loss: 0.05225; score: 0.93742 in 137.70s 
+04/26/2020, 16:19:46 epoch: 2; train_loss: 0.04853; vld_loss: 0.04905; score: 0.93801 in 134.01s +
+04/26/2020, 16:21:58 epoch: 3; train_loss: 0.04662; vld_loss: 0.04860; score: 0.93786 in 132.44s 
+04/26/2020, 16:24:09 epoch: 4; train_loss: 0.04545; vld_loss: 0.04788; score: 0.93806 in 130.83s +
+04/26/2020, 16:26:17 epoch: 5; train_loss: 0.04480; vld_loss: 0.04780; score: 0.93832 in 128.08s +
+04/26/2020, 16:28:27 epoch: 6; train_loss: 0.04432; vld_loss: 0.04691; score: 0.93823 in 130.18s 
+04/26/2020, 16:30:36 epoch: 7; train_loss: 0.04409; vld_loss: 0.04649; score: 0.93853 in 129.20s +
+04/26/2020, 16:32:47 epoch: 8; train_loss: 0.04369; vld_loss: 0.04625; score: 0.93869 in 130.22s +
+04/26/2020, 16:35:02 epoch: 9; train_loss: 0.04335; vld_loss: 0.04591; score: 0.93859 in 135.57s 
+04/26/2020, 16:37:12 epoch: 10; train_loss: 0.04322; vld_loss: 0.04577; score: 0.93871 in 129.46s +
+04/26/2020, 16:39:26 epoch: 11; train_loss: 0.04310; vld_loss: 0.04573; score: 0.93855 in 134.40s 
+04/26/2020, 16:41:43 epoch: 12; train_loss: 0.04271; vld_loss: 0.04568; score: 0.93869 in 136.55s 
+04/26/2020, 16:43:59 epoch: 13; train_loss: 0.04260; vld_loss: 0.04541; score: 0.93893 in 135.87s +
+04/26/2020, 16:46:14 epoch: 14; train_loss: 0.04264; vld_loss: 0.04541; score: 0.93874 in 135.75s 
+04/26/2020, 16:48:29 epoch: 15; train_loss: 0.04235; vld_loss: 0.04554; score: 0.93879 in 134.73s 
+04/26/2020, 16:50:44 epoch: 16; train_loss: 0.04212; vld_loss: 0.04555; score: 0.93873 in 134.75s 
+04/26/2020, 16:52:59 epoch: 17; train_loss: 0.04202; vld_loss: 0.04518; score: 0.93897 in 135.09s +
+04/26/2020, 16:55:15 epoch: 18; train_loss: 0.04183; vld_loss: 0.04556; score: 0.93860 in 135.85s 
+04/26/2020, 16:57:30 epoch: 19; train_loss: 0.04185; vld_loss: 0.04537; score: 0.93887 in 134.62s 
+04/26/2020, 16:59:49 epoch: 20; train_loss: 0.04157; vld_loss: 0.04628; score: 0.93883 in 139.76s 
+04/26/2020, 17:02:06 epoch: 21; train_loss: 0.04160; vld_loss: 0.04549; score: 0.93874 in 137.13s 
+04/26/2020, 17:04:21 epoch: 22; train_loss: 0.04127; vld_loss: 0.04553; score: 0.93832 in 134.73s 
+04/26/2020, 17:06:31 epoch: 23; train_loss: 0.04099; vld_loss: 0.04579; score: 0.93858 in 129.60s 
+04/26/2020, 17:08:38 epoch: 24; train_loss: 0.04113; vld_loss: 0.04559; score: 0.93890 in 126.88s 
+04/26/2020, 17:10:47 epoch: 25; train_loss: 0.04062; vld_loss: 0.04587; score: 0.93819 in 128.88s 
+04/26/2020, 17:12:53 epoch: 26; train_loss: 0.04048; vld_loss: 0.04549; score: 0.93891 in 126.76s 
+04/26/2020, 17:15:01 epoch: 27; train_loss: 0.04012; vld_loss: 0.04581; score: 0.93883 in 127.34s 
+04/26/2020, 17:17:10 epoch: 28; train_loss: 0.03991; vld_loss: 0.04662; score: 0.93838 in 129.15s 
+04/26/2020, 17:19:21 epoch: 29; train_loss: 0.03987; vld_loss: 0.04601; score: 0.93858 in 130.92s 
+04/26/2020, 17:21:29 epoch: 30; train_loss: 0.03948; vld_loss: 0.04675; score: 0.93821 in 128.10s 
+04/26/2020, 17:23:37 epoch: 31; train_loss: 0.03905; vld_loss: 0.04667; score: 0.93784 in 128.28s 
+04/26/2020, 17:25:48 epoch: 32; train_loss: 0.03881; vld_loss: 0.04701; score: 0.93809 in 130.96s 
+04/26/2020, 17:27:56 epoch: 33; train_loss: 0.03881; vld_loss: 0.04723; score: 0.93776 in 128.18s 
+04/26/2020, 17:30:04 epoch: 34; train_loss: 0.03786; vld_loss: 0.04761; score: 0.93805 in 127.45s 
+04/26/2020, 17:32:12 epoch: 35; train_loss: 0.03819; vld_loss: 0.04803; score: 0.93839 in 128.21s 
+04/26/2020, 17:34:25 epoch: 36; train_loss: 0.03754; vld_loss: 0.04884; score: 0.93762 in 133.23s 
+04/26/2020, 17:36:35 epoch: 37; train_loss: 0.03672; vld_loss: 0.04892; score: 0.93747 in 129.98s 
+04/26/2020, 17:38:45 epoch: 38; train_loss: 0.03635; vld_loss: 0.04982; score: 0.93739 in 130.29s 
+04/26/2020, 17:40:53 epoch: 39; train_loss: 0.03568; vld_loss: 0.05060; score: 0.93712 in 127.98s 
+04/26/2020, 17:43:01 epoch: 40; train_loss: 0.03535; vld_loss: 0.05022; score: 0.93724 in 128.08s 
+04/26/2020, 17:45:10 epoch: 41; train_loss: 0.03488; vld_loss: 0.05201; score: 0.93680 in 128.56s 
+04/26/2020, 17:47:19 epoch: 42; train_loss: 0.03392; vld_loss: 0.05251; score: 0.93569 in 129.27s 
+04/26/2020, 17:49:28 epoch: 43; train_loss: 0.03331; vld_loss: 0.05386; score: 0.93496 in 129.14s 
+04/26/2020, 17:51:38 epoch: 44; train_loss: 0.03320; vld_loss: 0.05476; score: 0.93615 in 129.13s 
+04/26/2020, 17:53:47 epoch: 45; train_loss: 0.03209; vld_loss: 0.05567; score: 0.93490 in 129.56s 
+04/26/2020, 17:55:56 epoch: 46; train_loss: 0.03190; vld_loss: 0.05635; score: 0.93438 in 129.28s 
+04/26/2020, 17:58:04 epoch: 47; train_loss: 0.03134; vld_loss: 0.05689; score: 0.93407 in 127.78s 
+04/26/2020, 18:00:11 epoch: 48; train_loss: 0.03030; vld_loss: 0.05716; score: 0.93270 in 126.61s 
+04/26/2020, 18:02:18 epoch: 49; train_loss: 0.02960; vld_loss: 0.05999; score: 0.93314 in 126.97s 
+04/26/2020, 18:04:26 epoch: 50; train_loss: 0.02967; vld_loss: 0.06002; score: 0.93298 in 128.06s 
+04/26/2020, 18:06:32 epoch: 51; train_loss: 0.02873; vld_loss: 0.06147; score: 0.93213 in 126.41s 
+04/26/2020, 18:08:40 epoch: 52; train_loss: 0.02796; vld_loss: 0.06412; score: 0.93133 in 128.06s 
+04/26/2020, 18:10:47 epoch: 53; train_loss: 0.02766; vld_loss: 0.06367; score: 0.93135 in 126.61s 
+04/26/2020, 18:12:55 epoch: 54; train_loss: 0.02732; vld_loss: 0.06451; score: 0.92987 in 128.02s 
+04/26/2020, 18:15:04 epoch: 55; train_loss: 0.02631; vld_loss: 0.06626; score: 0.93059 in 128.86s 
+04/26/2020, 18:17:15 epoch: 56; train_loss: 0.02577; vld_loss: 0.06797; score: 0.92989 in 130.82s 
+04/26/2020, 18:19:27 epoch: 57; train_loss: 0.02541; vld_loss: 0.06864; score: 0.92990 in 132.33s 
+04/26/2020, 18:21:36 epoch: 58; train_loss: 0.02470; vld_loss: 0.07069; score: 0.92828 in 129.31s 
+04/26/2020, 18:23:45 epoch: 59; train_loss: 0.02415; vld_loss: 0.07123; score: 0.92744 in 128.86s 
+04/26/2020, 18:25:53 epoch: 60; train_loss: 0.05201; vld_loss: 0.05208; score: 0.93618 in 128.23s 
+04/26/2020, 18:28:01 epoch: 61; train_loss: 0.04680; vld_loss: 0.04716; score: 0.93830 in 127.77s 
+04/26/2020, 18:30:12 epoch: 62; train_loss: 0.04440; vld_loss: 0.04625; score: 0.93844 in 131.02s 
+04/26/2020, 18:32:20 epoch: 63; train_loss: 0.04377; vld_loss: 0.04598; score: 0.93859 in 127.58s 
+04/26/2020, 18:34:33 epoch: 64; train_loss: 0.04332; vld_loss: 0.04566; score: 0.93848 in 133.39s 
+04/26/2020, 18:36:46 epoch: 65; train_loss: 0.04281; vld_loss: 0.04542; score: 0.93881 in 132.95s 
+04/26/2020, 18:39:01 epoch: 66; train_loss: 0.04258; vld_loss: 0.04531; score: 0.93887 in 134.87s 
+04/26/2020, 18:41:16 epoch: 67; train_loss: 0.04228; vld_loss: 0.04524; score: 0.93868 in 135.37s 
+04/26/2020, 18:43:31 epoch: 68; train_loss: 0.04205; vld_loss: 0.04516; score: 0.93900 in 134.37s +
+04/26/2020, 18:45:45 epoch: 69; train_loss: 0.04179; vld_loss: 0.04517; score: 0.93909 in 134.80s +
+04/26/2020, 18:48:02 epoch: 70; train_loss: 0.04153; vld_loss: 0.04517; score: 0.93906 in 136.57s 
+04/26/2020, 18:50:16 epoch: 71; train_loss: 0.04119; vld_loss: 0.04533; score: 0.93876 in 134.04s 
+04/26/2020, 18:52:42 epoch: 72; train_loss: 0.04090; vld_loss: 0.04549; score: 0.93833 in 145.94s 
+04/26/2020, 18:54:59 epoch: 73; train_loss: 0.04036; vld_loss: 0.04585; score: 0.93854 in 136.74s 
+04/26/2020, 18:57:14 epoch: 74; train_loss: 0.03967; vld_loss: 0.04661; score: 0.93832 in 135.43s 
+04/26/2020, 18:59:30 epoch: 75; train_loss: 0.03864; vld_loss: 0.04748; score: 0.93774 in 135.33s 
+04/26/2020, 19:01:43 epoch: 76; train_loss: 0.03726; vld_loss: 0.04943; score: 0.93662 in 133.26s 
+04/26/2020, 19:03:57 epoch: 77; train_loss: 0.03531; vld_loss: 0.05230; score: 0.93532 in 134.46s 
+04/26/2020, 19:06:12 epoch: 78; train_loss: 0.03349; vld_loss: 0.05472; score: 0.93377 in 134.49s 
+04/26/2020, 19:08:27 epoch: 79; train_loss: 0.03152; vld_loss: 0.05758; score: 0.93300 in 134.76s 
+04/26/2020, 19:10:41 epoch: 80; train_loss: 0.03002; vld_loss: 0.06030; score: 0.93132 in 134.20s 
+04/26/2020, 19:12:56 epoch: 81; train_loss: 0.02830; vld_loss: 0.06347; score: 0.93094 in 135.16s 
+04/26/2020, 19:15:11 epoch: 82; train_loss: 0.02734; vld_loss: 0.06571; score: 0.93072 in 134.99s 
+04/26/2020, 19:17:25 epoch: 83; train_loss: 0.02616; vld_loss: 0.06804; score: 0.92876 in 133.66s 
+04/26/2020, 19:19:39 epoch: 84; train_loss: 0.02501; vld_loss: 0.07087; score: 0.92893 in 134.01s 
+04/26/2020, 19:21:53 epoch: 85; train_loss: 0.02433; vld_loss: 0.07105; score: 0.92834 in 134.54s 
+04/26/2020, 19:24:08 epoch: 86; train_loss: 0.02353; vld_loss: 0.07393; score: 0.92696 in 134.29s 
+04/26/2020, 19:26:20 epoch: 87; train_loss: 0.02290; vld_loss: 0.07712; score: 0.92626 in 132.79s 
+04/26/2020, 19:28:34 epoch: 88; train_loss: 0.02276; vld_loss: 0.07810; score: 0.92664 in 133.35s 
+04/26/2020, 19:30:48 epoch: 89; train_loss: 0.02158; vld_loss: 0.08019; score: 0.92667 in 134.76s 
+04/26/2020, 19:33:03 epoch: 90; train_loss: 0.02095; vld_loss: 0.08225; score: 0.92590 in 134.48s 
+04/26/2020, 19:35:18 epoch: 91; train_loss: 0.02057; vld_loss: 0.08369; score: 0.92497 in 134.93s 
+04/26/2020, 19:37:26 epoch: 92; train_loss: 0.02011; vld_loss: 0.08385; score: 0.92442 in 128.65s 
+04/26/2020, 19:39:36 epoch: 93; train_loss: 0.01953; vld_loss: 0.08683; score: 0.92478 in 129.40s 
+04/26/2020, 19:41:49 epoch: 94; train_loss: 0.01902; vld_loss: 0.08807; score: 0.92398 in 133.34s 
+04/26/2020, 19:44:04 epoch: 95; train_loss: 0.01857; vld_loss: 0.08924; score: 0.92446 in 134.40s 
+04/26/2020, 19:46:19 epoch: 96; train_loss: 0.01831; vld_loss: 0.08855; score: 0.92353 in 135.58s 
+04/26/2020, 19:48:34 epoch: 97; train_loss: 0.01794; vld_loss: 0.09199; score: 0.92311 in 134.91s 
+04/26/2020, 19:50:50 epoch: 98; train_loss: 0.01747; vld_loss: 0.09259; score: 0.92309 in 135.86s 
+04/26/2020, 19:53:05 epoch: 99; train_loss: 0.01708; vld_loss: 0.09516; score: 0.92297 in 135.35s 
+04/26/2020, 19:55:19 epoch: 100; train_loss: 0.01704; vld_loss: 0.09534; score: 0.92207 in 133.43s 
+04/26/2020, 19:57:33 epoch: 101; train_loss: 0.01614; vld_loss: 0.09754; score: 0.92263 in 134.13s 
+04/26/2020, 19:59:46 epoch: 102; train_loss: 0.01598; vld_loss: 0.09978; score: 0.92219 in 132.96s 
+04/26/2020, 20:02:01 epoch: 103; train_loss: 0.01552; vld_loss: 0.09726; score: 0.92172 in 134.64s 
+04/26/2020, 20:04:18 epoch: 104; train_loss: 0.01523; vld_loss: 0.10195; score: 0.92127 in 137.06s 
+04/26/2020, 20:06:34 epoch: 105; train_loss: 0.01493; vld_loss: 0.10332; score: 0.92183 in 136.04s 
+04/26/2020, 20:09:03 epoch: 106; train_loss: 0.01449; vld_loss: 0.10510; score: 0.92106 in 149.37s 
+04/26/2020, 20:11:19 epoch: 107; train_loss: 0.01441; vld_loss: 0.10509; score: 0.92101 in 135.65s 
+04/26/2020, 20:13:32 epoch: 108; train_loss: 0.01385; vld_loss: 0.10689; score: 0.92052 in 133.79s 
+04/26/2020, 20:15:48 epoch: 109; train_loss: 0.01344; vld_loss: 0.10836; score: 0.92088 in 135.34s 
+04/26/2020, 20:18:01 epoch: 110; train_loss: 0.01322; vld_loss: 0.11006; score: 0.92012 in 133.10s 
+04/26/2020, 20:20:16 epoch: 111; train_loss: 0.01311; vld_loss: 0.11247; score: 0.92004 in 134.74s 
+04/26/2020, 20:22:30 epoch: 112; train_loss: 0.01295; vld_loss: 0.11253; score: 0.91905 in 134.82s 
+04/26/2020, 20:24:44 epoch: 113; train_loss: 0.01253; vld_loss: 0.11507; score: 0.91924 in 133.97s 
+04/26/2020, 20:26:59 epoch: 114; train_loss: 0.01245; vld_loss: 0.11704; score: 0.92006 in 135.06s 
+04/26/2020, 20:29:15 epoch: 115; train_loss: 0.01182; vld_loss: 0.11699; score: 0.91965 in 135.34s 
+04/26/2020, 20:31:33 epoch: 116; train_loss: 0.01139; vld_loss: 0.12042; score: 0.92012 in 137.71s 
+04/26/2020, 20:33:48 epoch: 117; train_loss: 0.01149; vld_loss: 0.12037; score: 0.91893 in 135.80s 
+04/26/2020, 20:36:02 epoch: 118; train_loss: 0.01119; vld_loss: 0.12346; score: 0.91965 in 133.45s 
+04/26/2020, 20:38:17 epoch: 119; train_loss: 0.01097; vld_loss: 0.12184; score: 0.91859 in 135.35s 
+04/26/2020, 20:40:29 epoch: 120; train_loss: 0.01082; vld_loss: 0.12492; score: 0.91989 in 131.91s 
+04/26/2020, 20:42:36 epoch: 121; train_loss: 0.01040; vld_loss: 0.12541; score: 0.91902 in 126.99s 
+04/26/2020, 20:44:44 epoch: 122; train_loss: 0.01052; vld_loss: 0.12692; score: 0.91982 in 127.63s 
+04/26/2020, 20:46:57 epoch: 123; train_loss: 0.01011; vld_loss: 0.12926; score: 0.91889 in 133.12s 
+04/26/2020, 20:49:06 epoch: 124; train_loss: 0.00996; vld_loss: 0.12841; score: 0.91930 in 129.14s 
+04/26/2020, 20:51:19 epoch: 125; train_loss: 0.00964; vld_loss: 0.13102; score: 0.91854 in 133.59s 
+04/26/2020, 20:53:31 epoch: 126; train_loss: 0.00939; vld_loss: 0.13421; score: 0.91989 in 131.96s 
+04/26/2020, 20:55:47 epoch: 127; train_loss: 0.00922; vld_loss: 0.13414; score: 0.91899 in 135.53s 
+04/26/2020, 20:58:01 epoch: 128; train_loss: 0.00905; vld_loss: 0.13621; score: 0.91931 in 133.86s 
+04/26/2020, 21:00:15 epoch: 129; train_loss: 0.00877; vld_loss: 0.13829; score: 0.91866 in 133.79s 
+04/26/2020, 21:02:27 epoch: 130; train_loss: 0.00874; vld_loss: 0.13751; score: 0.91952 in 132.58s 
+04/26/2020, 21:04:39 epoch: 131; train_loss: 0.00846; vld_loss: 0.14075; score: 0.91972 in 132.06s 
+04/26/2020, 21:06:52 epoch: 132; train_loss: 0.00842; vld_loss: 0.14049; score: 0.91951 in 133.15s 
+04/26/2020, 21:09:04 epoch: 133; train_loss: 0.00812; vld_loss: 0.14350; score: 0.91999 in 131.81s 
+04/26/2020, 21:11:16 epoch: 134; train_loss: 0.00802; vld_loss: 0.14219; score: 0.91859 in 132.27s 
+04/26/2020, 21:13:30 epoch: 135; train_loss: 0.00781; vld_loss: 0.14662; score: 0.91939 in 133.03s 
+04/26/2020, 21:15:42 epoch: 136; train_loss: 0.00776; vld_loss: 0.14653; score: 0.91849 in 132.25s 
+04/26/2020, 21:17:55 epoch: 137; train_loss: 0.00757; vld_loss: 0.14744; score: 0.91890 in 132.78s 
+04/26/2020, 21:20:08 epoch: 138; train_loss: 0.00741; vld_loss: 0.14760; score: 0.91902 in 133.92s 
+04/26/2020, 21:22:23 epoch: 139; train_loss: 0.00731; vld_loss: 0.15027; score: 0.91961 in 134.37s 
+04/26/2020, 21:24:35 epoch: 140; train_loss: 0.00703; vld_loss: 0.15208; score: 0.91841 in 131.96s 
+04/26/2020, 21:26:58 epoch: 141; train_loss: 0.00705; vld_loss: 0.15246; score: 0.91863 in 143.62s 
+04/26/2020, 21:29:16 epoch: 142; train_loss: 0.00678; vld_loss: 0.15347; score: 0.91839 in 137.33s 
+04/26/2020, 21:31:27 epoch: 143; train_loss: 0.00671; vld_loss: 0.15519; score: 0.91938 in 131.51s 
+04/26/2020, 21:33:40 epoch: 144; train_loss: 0.00660; vld_loss: 0.15676; score: 0.91892 in 132.90s 
+04/26/2020, 21:35:54 epoch: 145; train_loss: 0.00658; vld_loss: 0.15647; score: 0.91945 in 133.59s 
+04/26/2020, 21:38:05 epoch: 146; train_loss: 0.00625; vld_loss: 0.15962; score: 0.91913 in 131.11s 
+04/26/2020, 21:40:18 epoch: 147; train_loss: 0.00625; vld_loss: 0.15884; score: 0.91892 in 132.96s 
+04/26/2020, 21:42:29 epoch: 148; train_loss: 0.00617; vld_loss: 0.16073; score: 0.91877 in 131.60s 
+04/26/2020, 21:44:42 epoch: 149; train_loss: 0.00600; vld_loss: 0.16136; score: 0.91896 in 132.47s 
+04/26/2020, 21:46:50 epoch: 150; train_loss: 0.00594; vld_loss: 0.16284; score: 0.91953 in 128.55s 
+04/26/2020, 21:48:56 epoch: 151; train_loss: 0.00571; vld_loss: 0.16483; score: 0.91891 in 125.77s 
+04/26/2020, 21:51:08 epoch: 152; train_loss: 0.00570; vld_loss: 0.16613; score: 0.91877 in 131.99s 
+04/26/2020, 21:53:20 epoch: 153; train_loss: 0.00550; vld_loss: 0.16602; score: 0.91939 in 132.11s 
+04/26/2020, 21:55:33 epoch: 154; train_loss: 0.00552; vld_loss: 0.16700; score: 0.91880 in 133.14s 
+04/26/2020, 21:57:48 epoch: 155; train_loss: 0.00540; vld_loss: 0.16888; score: 0.91866 in 134.47s 
+04/26/2020, 22:00:01 epoch: 156; train_loss: 0.00522; vld_loss: 0.17006; score: 0.91932 in 132.59s 
+04/26/2020, 22:02:15 epoch: 157; train_loss: 0.00513; vld_loss: 0.17156; score: 0.91873 in 134.28s 
+04/26/2020, 22:04:28 epoch: 158; train_loss: 0.00519; vld_loss: 0.17098; score: 0.91878 in 133.04s 
+04/26/2020, 22:06:41 epoch: 159; train_loss: 0.00497; vld_loss: 0.17330; score: 0.91924 in 132.98s 
+04/26/2020, 22:08:54 epoch: 160; train_loss: 0.00505; vld_loss: 0.17367; score: 0.91862 in 132.95s 
+04/26/2020, 22:11:06 epoch: 161; train_loss: 0.00495; vld_loss: 0.17312; score: 0.91891 in 131.74s 
+04/26/2020, 22:13:18 epoch: 162; train_loss: 0.00485; vld_loss: 0.17504; score: 0.91880 in 132.44s 
+04/26/2020, 22:15:29 epoch: 163; train_loss: 0.00476; vld_loss: 0.17598; score: 0.91903 in 131.33s 
+04/26/2020, 22:17:40 epoch: 164; train_loss: 0.00470; vld_loss: 0.17699; score: 0.91917 in 130.75s 
+04/26/2020, 22:19:49 epoch: 165; train_loss: 0.00469; vld_loss: 0.17728; score: 0.91902 in 129.19s 
+04/26/2020, 22:22:00 epoch: 166; train_loss: 0.00456; vld_loss: 0.17810; score: 0.91939 in 131.10s 
+04/26/2020, 22:24:11 epoch: 167; train_loss: 0.00453; vld_loss: 0.17922; score: 0.91888 in 130.24s 
+04/26/2020, 22:26:19 epoch: 168; train_loss: 0.00442; vld_loss: 0.18078; score: 0.91896 in 128.89s 
+04/26/2020, 22:28:29 epoch: 169; train_loss: 0.00428; vld_loss: 0.18175; score: 0.91914 in 129.89s 
+04/26/2020, 22:30:40 epoch: 170; train_loss: 0.00435; vld_loss: 0.18198; score: 0.91949 in 130.65s 
+04/26/2020, 22:32:52 epoch: 171; train_loss: 0.00435; vld_loss: 0.18246; score: 0.91923 in 132.47s 
+04/26/2020, 22:35:01 epoch: 172; train_loss: 0.00425; vld_loss: 0.18305; score: 0.91925 in 128.89s 
+04/26/2020, 22:37:10 epoch: 173; train_loss: 0.00417; vld_loss: 0.18378; score: 0.91897 in 128.62s 
+04/26/2020, 22:39:20 epoch: 174; train_loss: 0.00422; vld_loss: 0.18450; score: 0.91920 in 130.10s 
+04/26/2020, 22:41:30 epoch: 175; train_loss: 0.00418; vld_loss: 0.18461; score: 0.91907 in 129.91s 
+04/26/2020, 22:43:41 epoch: 176; train_loss: 0.00409; vld_loss: 0.18578; score: 0.91915 in 130.79s 
+04/26/2020, 22:45:51 epoch: 177; train_loss: 0.00416; vld_loss: 0.18578; score: 0.91916 in 129.89s 
+04/26/2020, 22:48:06 epoch: 178; train_loss: 0.00405; vld_loss: 0.18596; score: 0.91904 in 135.01s 
+04/26/2020, 22:51:50 epoch: 179; train_loss: 0.00403; vld_loss: 0.18654; score: 0.91888 in 223.92s 
+04/26/2020, 22:54:31 epoch: 180; train_loss: 0.00403; vld_loss: 0.18687; score: 0.91908 in 161.09s 
+04/26/2020, 22:56:42 epoch: 181; train_loss: 0.00397; vld_loss: 0.18693; score: 0.91922 in 131.11s 
+04/26/2020, 22:58:50 epoch: 182; train_loss: 0.00390; vld_loss: 0.18738; score: 0.91910 in 127.99s 
+04/26/2020, 23:01:01 epoch: 183; train_loss: 0.00393; vld_loss: 0.18789; score: 0.91911 in 130.93s 
+04/26/2020, 23:03:11 epoch: 184; train_loss: 0.00394; vld_loss: 0.18782; score: 0.91928 in 130.63s 
+04/26/2020, 23:05:21 epoch: 185; train_loss: 0.00398; vld_loss: 0.18790; score: 0.91908 in 129.72s 
+04/26/2020, 23:07:32 epoch: 186; train_loss: 0.00395; vld_loss: 0.18786; score: 0.91917 in 130.58s 
+04/26/2020, 23:09:44 epoch: 187; train_loss: 0.00387; vld_loss: 0.18833; score: 0.91918 in 132.05s 
+04/26/2020, 23:11:56 epoch: 188; train_loss: 0.00379; vld_loss: 0.18869; score: 0.91928 in 132.13s 
+04/26/2020, 23:14:06 epoch: 189; train_loss: 0.00376; vld_loss: 0.18873; score: 0.91927 in 129.90s 
+04/26/2020, 23:16:16 epoch: 190; train_loss: 0.00381; vld_loss: 0.18912; score: 0.91925 in 129.80s 
+04/26/2020, 23:18:25 epoch: 191; train_loss: 0.00388; vld_loss: 0.18891; score: 0.91934 in 129.81s 
+04/26/2020, 23:20:39 epoch: 192; train_loss: 0.00378; vld_loss: 0.18940; score: 0.91915 in 133.26s 
+04/26/2020, 23:22:48 epoch: 193; train_loss: 0.00382; vld_loss: 0.18923; score: 0.91926 in 128.93s 
+04/26/2020, 23:24:57 epoch: 194; train_loss: 0.00389; vld_loss: 0.18909; score: 0.91927 in 129.42s 
+04/26/2020, 23:27:07 epoch: 195; train_loss: 0.00372; vld_loss: 0.18925; score: 0.91926 in 130.44s 
+04/26/2020, 23:29:16 epoch: 196; train_loss: 0.00370; vld_loss: 0.18918; score: 0.91928 in 128.80s 
+04/26/2020, 23:31:28 epoch: 197; train_loss: 0.00378; vld_loss: 0.18968; score: 0.91908 in 131.30s 
+04/26/2020, 23:33:55 epoch: 198; train_loss: 0.00378; vld_loss: 0.18923; score: 0.91922 in 147.84s 
+04/26/2020, 23:36:05 epoch: 199; train_loss: 0.00383; vld_loss: 0.18941; score: 0.91921 in 129.27s 
+04/26/2020, 23:36:05 Get subs ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 569, in train
+    test_dataset = IonTestDataset(test.transpose((0, 2, 1)), test_feats.values)
+NameError: name 'test_feats' is not defined
+04/26/2020, 23:36:11 ##################### Start ... ##################### 
+04/26/2020, 23:36:11 Reading Data Started ... 
+04/26/2020, 23:36:16 Feat imp... 
+04/26/2020, 23:36:41 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/26/2020, 23:36:41 Folding 
+04/26/2020, 23:36:46 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/26/2020, 23:36:47 Load models ... 
+04/26/2020, 23:36:50 Training ... 
+04/26/2020, 23:38:59 epoch: 0; train_loss: 0.20956; vld_loss: 0.05438; score: 0.93735 in 128.47s +
+04/26/2020, 23:41:10 epoch: 1; train_loss: 0.05478; vld_loss: 0.04635; score: 0.93730 in 131.04s 
+04/26/2020, 23:43:20 epoch: 2; train_loss: 0.04923; vld_loss: 0.04430; score: 0.93731 in 130.30s 
+04/26/2020, 23:45:30 epoch: 3; train_loss: 0.04743; vld_loss: 0.04379; score: 0.93768 in 130.15s +
+04/26/2020, 23:47:41 epoch: 4; train_loss: 0.04653; vld_loss: 0.04311; score: 0.93793 in 130.38s +
+04/26/2020, 23:49:52 epoch: 5; train_loss: 0.04589; vld_loss: 0.04308; score: 0.93809 in 131.61s +
+04/26/2020, 23:52:02 epoch: 6; train_loss: 0.04518; vld_loss: 0.04226; score: 0.93794 in 129.38s 
+04/26/2020, 23:54:14 epoch: 7; train_loss: 0.04477; vld_loss: 0.04197; score: 0.93804 in 132.40s 
+04/26/2020, 23:56:21 epoch: 8; train_loss: 0.04452; vld_loss: 0.04207; score: 0.93766 in 126.63s 
+04/26/2020, 23:58:26 epoch: 9; train_loss: 0.04434; vld_loss: 0.04263; score: 0.93808 in 124.72s 
+04/27/2020, 00:00:31 epoch: 10; train_loss: 0.04416; vld_loss: 0.04185; score: 0.93846 in 125.46s +
+04/27/2020, 00:02:36 epoch: 11; train_loss: 0.04373; vld_loss: 0.04202; score: 0.93816 in 124.74s 
+04/27/2020, 00:04:45 epoch: 12; train_loss: 0.04362; vld_loss: 0.04170; score: 0.93809 in 129.47s 
+04/27/2020, 00:06:55 epoch: 13; train_loss: 0.04351; vld_loss: 0.04159; score: 0.93833 in 129.29s 
+04/27/2020, 00:09:06 epoch: 14; train_loss: 0.04350; vld_loss: 0.04209; score: 0.93819 in 131.43s 
+04/27/2020, 00:11:10 epoch: 15; train_loss: 0.04320; vld_loss: 0.04165; score: 0.93843 in 123.83s 
+04/27/2020, 00:13:15 epoch: 16; train_loss: 0.04307; vld_loss: 0.04185; score: 0.93805 in 125.49s 
+04/27/2020, 00:15:18 epoch: 17; train_loss: 0.04296; vld_loss: 0.04134; score: 0.93842 in 122.91s 
+04/27/2020, 00:17:28 epoch: 18; train_loss: 0.04276; vld_loss: 0.04168; score: 0.93802 in 129.62s 
+04/27/2020, 00:19:31 epoch: 19; train_loss: 0.04278; vld_loss: 0.04156; score: 0.93830 in 122.81s 
+04/27/2020, 00:21:33 epoch: 20; train_loss: 0.04261; vld_loss: 0.04161; score: 0.93851 in 122.55s +
+04/27/2020, 00:23:35 epoch: 21; train_loss: 0.04272; vld_loss: 0.04130; score: 0.93851 in 122.11s 
+04/27/2020, 00:25:38 epoch: 22; train_loss: 0.04220; vld_loss: 0.04152; score: 0.93855 in 122.64s +
+04/27/2020, 00:27:40 epoch: 23; train_loss: 0.04201; vld_loss: 0.04155; score: 0.93842 in 122.03s 
+04/27/2020, 00:29:51 epoch: 24; train_loss: 0.04185; vld_loss: 0.04192; score: 0.93815 in 130.71s 
+04/27/2020, 00:32:00 epoch: 25; train_loss: 0.04201; vld_loss: 0.04168; score: 0.93829 in 128.86s 
+04/27/2020, 00:34:01 epoch: 26; train_loss: 0.04153; vld_loss: 0.04191; score: 0.93854 in 121.53s 
+04/27/2020, 00:36:04 epoch: 27; train_loss: 0.04120; vld_loss: 0.04211; score: 0.93826 in 122.51s 
+04/27/2020, 00:38:06 epoch: 28; train_loss: 0.04110; vld_loss: 0.04186; score: 0.93838 in 122.22s 
+04/27/2020, 00:40:09 epoch: 29; train_loss: 0.04081; vld_loss: 0.04240; score: 0.93800 in 122.51s 
+04/27/2020, 00:42:11 epoch: 30; train_loss: 0.04084; vld_loss: 0.04211; score: 0.93822 in 122.66s 
+04/27/2020, 00:44:13 epoch: 31; train_loss: 0.04058; vld_loss: 0.04279; score: 0.93720 in 122.23s 
+04/27/2020, 00:46:21 epoch: 32; train_loss: 0.03998; vld_loss: 0.04321; score: 0.93768 in 127.39s 
+04/27/2020, 00:48:23 epoch: 33; train_loss: 0.03968; vld_loss: 0.04337; score: 0.93782 in 121.74s 
+04/27/2020, 00:50:24 epoch: 34; train_loss: 0.03908; vld_loss: 0.04351; score: 0.93767 in 121.57s 
+04/27/2020, 00:52:26 epoch: 35; train_loss: 0.03886; vld_loss: 0.04336; score: 0.93777 in 122.04s 
+04/27/2020, 00:54:28 epoch: 36; train_loss: 0.03838; vld_loss: 0.04407; score: 0.93798 in 122.10s 
+04/27/2020, 00:56:32 epoch: 37; train_loss: 0.03809; vld_loss: 0.04411; score: 0.93779 in 123.59s 
+04/27/2020, 00:58:33 epoch: 38; train_loss: 0.03731; vld_loss: 0.04471; score: 0.93725 in 121.57s 
+04/27/2020, 01:00:44 epoch: 39; train_loss: 0.03676; vld_loss: 0.04637; score: 0.93636 in 130.12s 
+04/27/2020, 01:02:45 epoch: 40; train_loss: 0.03661; vld_loss: 0.04571; score: 0.93661 in 121.66s 
+04/27/2020, 01:04:47 epoch: 41; train_loss: 0.03578; vld_loss: 0.04708; score: 0.93658 in 122.29s 
+04/27/2020, 01:06:49 epoch: 42; train_loss: 0.03505; vld_loss: 0.04755; score: 0.93533 in 121.59s 
+04/27/2020, 01:08:51 epoch: 43; train_loss: 0.03452; vld_loss: 0.04811; score: 0.93502 in 121.59s 
+04/27/2020, 01:11:01 epoch: 44; train_loss: 0.03392; vld_loss: 0.04914; score: 0.93537 in 130.26s 
+04/27/2020, 01:13:03 epoch: 45; train_loss: 0.03333; vld_loss: 0.04962; score: 0.93481 in 122.22s 
+04/27/2020, 01:15:11 epoch: 46; train_loss: 0.03308; vld_loss: 0.05087; score: 0.93503 in 128.20s 
+04/27/2020, 01:17:13 epoch: 47; train_loss: 0.03221; vld_loss: 0.05210; score: 0.93413 in 122.08s 
+04/27/2020, 01:19:21 epoch: 48; train_loss: 0.03163; vld_loss: 0.05259; score: 0.93416 in 127.15s 
+04/27/2020, 01:21:23 epoch: 49; train_loss: 0.03079; vld_loss: 0.05390; score: 0.93302 in 122.44s 
+04/27/2020, 01:23:24 epoch: 50; train_loss: 0.03038; vld_loss: 0.05291; score: 0.93231 in 121.47s 
+04/27/2020, 01:25:27 epoch: 51; train_loss: 0.02953; vld_loss: 0.05541; score: 0.93236 in 122.26s 
+04/27/2020, 01:27:28 epoch: 52; train_loss: 0.02887; vld_loss: 0.05760; score: 0.93081 in 121.38s 
+04/27/2020, 01:29:30 epoch: 53; train_loss: 0.02880; vld_loss: 0.05730; score: 0.93032 in 121.62s 
+04/27/2020, 01:31:31 epoch: 54; train_loss: 0.02817; vld_loss: 0.05971; score: 0.93176 in 121.65s 
+04/27/2020, 01:33:41 epoch: 55; train_loss: 0.02714; vld_loss: 0.05976; score: 0.93092 in 129.65s 
+04/27/2020, 01:35:44 epoch: 56; train_loss: 0.02685; vld_loss: 0.06009; score: 0.93005 in 122.46s 
+04/27/2020, 01:37:51 epoch: 57; train_loss: 0.02618; vld_loss: 0.06221; score: 0.92979 in 127.43s 
+04/27/2020, 01:39:53 epoch: 58; train_loss: 0.02593; vld_loss: 0.06405; score: 0.92919 in 122.29s 
+04/27/2020, 01:41:55 epoch: 59; train_loss: 0.02569; vld_loss: 0.06523; score: 0.92822 in 121.90s 
+04/27/2020, 01:43:58 epoch: 60; train_loss: 0.02476; vld_loss: 0.06540; score: 0.92686 in 122.45s 
+04/27/2020, 01:46:00 epoch: 61; train_loss: 0.02413; vld_loss: 0.06696; score: 0.92860 in 122.22s 
+04/27/2020, 01:48:02 epoch: 62; train_loss: 0.02331; vld_loss: 0.06793; score: 0.92770 in 121.82s 
+04/27/2020, 01:50:06 epoch: 63; train_loss: 0.02338; vld_loss: 0.06972; score: 0.92774 in 124.63s 
+04/27/2020, 01:52:08 epoch: 64; train_loss: 0.02267; vld_loss: 0.06978; score: 0.92524 in 121.39s 
+04/27/2020, 01:54:10 epoch: 65; train_loss: 0.02202; vld_loss: 0.07103; score: 0.92572 in 122.39s 
+04/27/2020, 01:56:12 epoch: 66; train_loss: 0.02174; vld_loss: 0.07333; score: 0.92573 in 122.20s 
+04/27/2020, 01:58:14 epoch: 67; train_loss: 0.02091; vld_loss: 0.07521; score: 0.92459 in 121.93s 
+04/27/2020, 02:00:17 epoch: 68; train_loss: 0.02071; vld_loss: 0.07496; score: 0.92453 in 122.45s 
+04/27/2020, 02:02:18 epoch: 69; train_loss: 0.02030; vld_loss: 0.07618; score: 0.92565 in 121.81s 
+04/27/2020, 02:04:21 epoch: 70; train_loss: 0.01974; vld_loss: 0.07843; score: 0.92421 in 122.18s 
+04/27/2020, 02:06:24 epoch: 71; train_loss: 0.01982; vld_loss: 0.07811; score: 0.92347 in 123.85s 
+04/27/2020, 02:08:36 epoch: 72; train_loss: 0.01893; vld_loss: 0.08077; score: 0.92384 in 131.39s 
+04/27/2020, 02:10:38 epoch: 73; train_loss: 0.01850; vld_loss: 0.08282; score: 0.92384 in 122.58s 
+04/27/2020, 02:12:46 epoch: 74; train_loss: 0.01792; vld_loss: 0.08224; score: 0.92291 in 127.48s 
+04/27/2020, 02:14:48 epoch: 75; train_loss: 0.01771; vld_loss: 0.08406; score: 0.92358 in 121.73s 
+04/27/2020, 02:16:50 epoch: 76; train_loss: 0.01753; vld_loss: 0.08477; score: 0.92258 in 122.11s 
+04/27/2020, 02:18:53 epoch: 77; train_loss: 0.01707; vld_loss: 0.08661; score: 0.92260 in 122.88s 
+04/27/2020, 02:21:04 epoch: 78; train_loss: 0.01742; vld_loss: 0.08853; score: 0.92308 in 131.78s 
+04/27/2020, 02:23:06 epoch: 79; train_loss: 0.01613; vld_loss: 0.08990; score: 0.92119 in 122.02s 
+04/27/2020, 02:25:08 epoch: 80; train_loss: 0.01601; vld_loss: 0.08969; score: 0.92121 in 121.43s 
+04/27/2020, 02:27:09 epoch: 81; train_loss: 0.01565; vld_loss: 0.08975; score: 0.92122 in 121.19s 
+04/27/2020, 02:29:12 epoch: 82; train_loss: 0.01546; vld_loss: 0.09229; score: 0.92188 in 123.03s 
+04/27/2020, 02:31:15 epoch: 83; train_loss: 0.01508; vld_loss: 0.09450; score: 0.92190 in 122.84s 
+04/27/2020, 02:33:17 epoch: 84; train_loss: 0.01453; vld_loss: 0.09693; score: 0.92237 in 122.47s 
+04/27/2020, 02:35:20 epoch: 85; train_loss: 0.01430; vld_loss: 0.09517; score: 0.92051 in 122.25s 
+04/27/2020, 02:37:31 epoch: 86; train_loss: 0.01403; vld_loss: 0.09711; score: 0.92209 in 131.81s 
+04/27/2020, 02:39:34 epoch: 87; train_loss: 0.01373; vld_loss: 0.10022; score: 0.92185 in 122.14s 
+04/27/2020, 02:41:43 epoch: 88; train_loss: 0.01327; vld_loss: 0.10168; score: 0.92166 in 129.61s 
+04/27/2020, 02:43:52 epoch: 89; train_loss: 0.01304; vld_loss: 0.10241; score: 0.91948 in 128.79s 
+04/27/2020, 02:45:54 epoch: 90; train_loss: 0.01306; vld_loss: 0.10222; score: 0.92024 in 122.02s 
+04/27/2020, 02:47:57 epoch: 91; train_loss: 0.01257; vld_loss: 0.10441; score: 0.92004 in 122.90s 
+04/27/2020, 02:50:00 epoch: 92; train_loss: 0.01245; vld_loss: 0.10456; score: 0.92023 in 123.19s 
+04/27/2020, 02:52:04 epoch: 93; train_loss: 0.01198; vld_loss: 0.10835; score: 0.92103 in 123.47s 
+04/27/2020, 02:54:08 epoch: 94; train_loss: 0.01189; vld_loss: 0.10907; score: 0.92015 in 124.63s 
+04/27/2020, 02:56:19 epoch: 95; train_loss: 0.01143; vld_loss: 0.11053; score: 0.92052 in 130.78s 
+04/27/2020, 02:58:21 epoch: 96; train_loss: 0.01109; vld_loss: 0.11045; score: 0.91897 in 122.06s 
+04/27/2020, 03:00:22 epoch: 97; train_loss: 0.01104; vld_loss: 0.11073; score: 0.91933 in 121.38s 
+04/27/2020, 03:02:24 epoch: 98; train_loss: 0.01067; vld_loss: 0.11175; score: 0.91946 in 121.81s 
+04/27/2020, 03:04:26 epoch: 99; train_loss: 0.01054; vld_loss: 0.11383; score: 0.92000 in 121.92s 
+04/27/2020, 03:06:30 epoch: 100; train_loss: 0.01035; vld_loss: 0.11588; score: 0.92000 in 124.17s 
+04/27/2020, 03:08:31 epoch: 101; train_loss: 0.00994; vld_loss: 0.11600; score: 0.91884 in 120.50s 
+04/27/2020, 03:10:31 epoch: 102; train_loss: 0.00983; vld_loss: 0.11713; score: 0.91954 in 120.54s 
+04/27/2020, 03:12:32 epoch: 103; train_loss: 0.00956; vld_loss: 0.12038; score: 0.91969 in 120.75s 
+04/27/2020, 03:14:33 epoch: 104; train_loss: 0.00944; vld_loss: 0.12180; score: 0.92091 in 120.61s 
+04/27/2020, 03:16:42 epoch: 105; train_loss: 0.00923; vld_loss: 0.12131; score: 0.92011 in 129.65s 
+04/27/2020, 03:18:43 epoch: 106; train_loss: 0.00892; vld_loss: 0.12476; score: 0.91928 in 120.51s 
+04/27/2020, 03:20:53 epoch: 107; train_loss: 0.00897; vld_loss: 0.12366; score: 0.91993 in 130.15s 
+04/27/2020, 03:23:02 epoch: 108; train_loss: 0.00850; vld_loss: 0.12536; score: 0.91884 in 129.26s 
+04/27/2020, 03:25:11 epoch: 109; train_loss: 0.00854; vld_loss: 0.12737; score: 0.92036 in 128.83s 
+04/27/2020, 03:27:21 epoch: 110; train_loss: 0.00810; vld_loss: 0.12925; score: 0.91903 in 129.50s 
+04/27/2020, 03:29:30 epoch: 111; train_loss: 0.00820; vld_loss: 0.12999; score: 0.92057 in 129.81s 
+04/27/2020, 03:31:32 epoch: 112; train_loss: 0.00803; vld_loss: 0.12955; score: 0.91924 in 121.49s 
+04/27/2020, 03:33:41 epoch: 113; train_loss: 0.00765; vld_loss: 0.13420; score: 0.91974 in 128.87s 
+04/27/2020, 03:35:50 epoch: 114; train_loss: 0.00771; vld_loss: 0.13307; score: 0.91910 in 128.86s 
+04/27/2020, 03:37:59 epoch: 115; train_loss: 0.00732; vld_loss: 0.13588; score: 0.91991 in 129.28s 
+04/27/2020, 03:40:00 epoch: 116; train_loss: 0.00695; vld_loss: 0.13786; score: 0.91906 in 121.33s 
+04/27/2020, 03:42:01 epoch: 117; train_loss: 0.00712; vld_loss: 0.13643; score: 0.91928 in 120.79s 
+04/27/2020, 03:44:02 epoch: 118; train_loss: 0.00685; vld_loss: 0.14090; score: 0.91902 in 120.75s 
+04/27/2020, 03:46:02 epoch: 119; train_loss: 0.00678; vld_loss: 0.13920; score: 0.91839 in 120.54s 
+04/27/2020, 03:48:03 epoch: 120; train_loss: 0.00669; vld_loss: 0.14194; score: 0.92013 in 120.74s 
+04/27/2020, 03:50:04 epoch: 121; train_loss: 0.00644; vld_loss: 0.14284; score: 0.91919 in 120.99s 
+04/27/2020, 03:52:13 epoch: 122; train_loss: 0.00664; vld_loss: 0.14294; score: 0.92027 in 129.29s 
+04/27/2020, 03:54:23 epoch: 123; train_loss: 0.00619; vld_loss: 0.14455; score: 0.91980 in 129.96s 
+04/27/2020, 03:56:24 epoch: 124; train_loss: 0.00617; vld_loss: 0.14632; score: 0.91952 in 120.54s 
+04/27/2020, 03:58:25 epoch: 125; train_loss: 0.00583; vld_loss: 0.14933; score: 0.91960 in 121.00s 
+04/27/2020, 04:00:36 epoch: 126; train_loss: 0.00578; vld_loss: 0.14862; score: 0.91890 in 130.84s 
+04/27/2020, 04:02:38 epoch: 127; train_loss: 0.00570; vld_loss: 0.15122; score: 0.91951 in 122.14s 
+04/27/2020, 04:04:47 epoch: 128; train_loss: 0.00555; vld_loss: 0.15152; score: 0.91897 in 129.03s 
+04/27/2020, 04:06:56 epoch: 129; train_loss: 0.00537; vld_loss: 0.15378; score: 0.91905 in 129.20s 
+04/27/2020, 04:08:57 epoch: 130; train_loss: 0.00534; vld_loss: 0.15451; score: 0.91972 in 121.16s 
+04/27/2020, 04:10:58 epoch: 131; train_loss: 0.00521; vld_loss: 0.15619; score: 0.91932 in 121.06s 
+04/27/2020, 04:12:59 epoch: 132; train_loss: 0.00516; vld_loss: 0.15551; score: 0.91944 in 120.47s 
+04/27/2020, 04:14:59 epoch: 133; train_loss: 0.00494; vld_loss: 0.15854; score: 0.91989 in 120.67s 
+04/27/2020, 04:17:00 epoch: 134; train_loss: 0.00475; vld_loss: 0.16057; score: 0.91954 in 120.23s 
+04/27/2020, 04:19:00 epoch: 135; train_loss: 0.00475; vld_loss: 0.16063; score: 0.91976 in 120.81s 
+04/27/2020, 04:21:11 epoch: 136; train_loss: 0.00465; vld_loss: 0.16247; score: 0.92018 in 130.64s 
+04/27/2020, 04:23:10 epoch: 137; train_loss: 0.00447; vld_loss: 0.16336; score: 0.91996 in 119.35s 
+04/27/2020, 04:25:11 epoch: 138; train_loss: 0.00443; vld_loss: 0.16406; score: 0.91977 in 120.98s 
+04/27/2020, 04:27:20 epoch: 139; train_loss: 0.00430; vld_loss: 0.16572; score: 0.91978 in 128.56s 
+04/27/2020, 04:29:19 epoch: 140; train_loss: 0.00422; vld_loss: 0.16729; score: 0.92017 in 119.02s 
+04/27/2020, 04:31:18 epoch: 141; train_loss: 0.00423; vld_loss: 0.16805; score: 0.91951 in 119.03s 
+04/27/2020, 04:33:17 epoch: 142; train_loss: 0.00414; vld_loss: 0.16846; score: 0.91924 in 118.95s 
+04/27/2020, 04:35:16 epoch: 143; train_loss: 0.00399; vld_loss: 0.17010; score: 0.91943 in 118.96s 
+04/27/2020, 04:37:15 epoch: 144; train_loss: 0.00398; vld_loss: 0.17127; score: 0.91989 in 119.15s 
+04/27/2020, 04:39:14 epoch: 145; train_loss: 0.00391; vld_loss: 0.17207; score: 0.92045 in 119.08s 
+04/27/2020, 04:41:13 epoch: 146; train_loss: 0.00371; vld_loss: 0.17338; score: 0.91977 in 119.00s 
+04/27/2020, 04:43:12 epoch: 147; train_loss: 0.00367; vld_loss: 0.17417; score: 0.91960 in 118.92s 
+04/27/2020, 04:45:11 epoch: 148; train_loss: 0.00370; vld_loss: 0.17472; score: 0.91959 in 118.95s 
+04/27/2020, 04:47:10 epoch: 149; train_loss: 0.00356; vld_loss: 0.17604; score: 0.91982 in 119.19s 
+04/27/2020, 04:49:09 epoch: 150; train_loss: 0.00347; vld_loss: 0.17745; score: 0.91976 in 119.09s 
+04/27/2020, 04:51:08 epoch: 151; train_loss: 0.00333; vld_loss: 0.17787; score: 0.91986 in 119.07s 
+04/27/2020, 04:53:07 epoch: 152; train_loss: 0.00339; vld_loss: 0.17875; score: 0.92039 in 118.99s 
+04/27/2020, 04:55:08 epoch: 153; train_loss: 0.00319; vld_loss: 0.18076; score: 0.91985 in 120.32s 
+04/27/2020, 04:57:07 epoch: 154; train_loss: 0.00322; vld_loss: 0.18129; score: 0.91993 in 118.97s 
+04/27/2020, 04:59:06 epoch: 155; train_loss: 0.00313; vld_loss: 0.18234; score: 0.91968 in 119.15s 
+04/27/2020, 05:01:05 epoch: 156; train_loss: 0.00303; vld_loss: 0.18363; score: 0.91983 in 119.26s 
+04/27/2020, 05:03:09 epoch: 157; train_loss: 0.00293; vld_loss: 0.18483; score: 0.91986 in 123.45s 
+04/27/2020, 05:05:08 epoch: 158; train_loss: 0.00297; vld_loss: 0.18547; score: 0.92026 in 119.23s 
+04/27/2020, 05:07:07 epoch: 159; train_loss: 0.00285; vld_loss: 0.18719; score: 0.92019 in 119.21s 
+04/27/2020, 05:09:06 epoch: 160; train_loss: 0.00284; vld_loss: 0.18833; score: 0.92010 in 119.18s 
+04/27/2020, 05:11:05 epoch: 161; train_loss: 0.00271; vld_loss: 0.18930; score: 0.91983 in 119.20s 
+04/27/2020, 05:13:05 epoch: 162; train_loss: 0.00273; vld_loss: 0.19015; score: 0.92008 in 119.24s 
+04/27/2020, 05:15:04 epoch: 163; train_loss: 0.00265; vld_loss: 0.19100; score: 0.91996 in 119.14s 
+04/27/2020, 05:17:03 epoch: 164; train_loss: 0.00267; vld_loss: 0.19134; score: 0.91997 in 119.15s 
+04/27/2020, 05:19:02 epoch: 165; train_loss: 0.00258; vld_loss: 0.19243; score: 0.91982 in 119.12s 
+04/27/2020, 05:21:01 epoch: 166; train_loss: 0.00251; vld_loss: 0.19291; score: 0.92001 in 119.18s 
+04/27/2020, 05:23:00 epoch: 167; train_loss: 0.00251; vld_loss: 0.19381; score: 0.92008 in 119.16s 
+04/27/2020, 05:25:00 epoch: 168; train_loss: 0.00242; vld_loss: 0.19465; score: 0.91996 in 119.18s 
+04/27/2020, 05:26:59 epoch: 169; train_loss: 0.00236; vld_loss: 0.19566; score: 0.91995 in 119.18s 
+04/27/2020, 05:28:58 epoch: 170; train_loss: 0.00241; vld_loss: 0.19605; score: 0.92018 in 119.16s 
+04/27/2020, 05:30:57 epoch: 171; train_loss: 0.00239; vld_loss: 0.19624; score: 0.92015 in 119.22s 
+04/27/2020, 05:32:56 epoch: 172; train_loss: 0.00233; vld_loss: 0.19717; score: 0.91985 in 119.15s 
+04/27/2020, 05:34:55 epoch: 173; train_loss: 0.00227; vld_loss: 0.19745; score: 0.92025 in 119.15s 
+04/27/2020, 05:36:55 epoch: 174; train_loss: 0.00229; vld_loss: 0.19781; score: 0.91987 in 119.19s 
+04/27/2020, 05:38:54 epoch: 175; train_loss: 0.00227; vld_loss: 0.19840; score: 0.91991 in 119.05s 
+04/27/2020, 05:40:53 epoch: 176; train_loss: 0.00220; vld_loss: 0.19903; score: 0.91999 in 119.16s 
+04/27/2020, 05:42:52 epoch: 177; train_loss: 0.00230; vld_loss: 0.19899; score: 0.92009 in 119.14s 
+04/27/2020, 05:44:53 epoch: 178; train_loss: 0.00218; vld_loss: 0.19989; score: 0.92006 in 120.73s 
+04/27/2020, 05:46:53 epoch: 179; train_loss: 0.00218; vld_loss: 0.20010; score: 0.91977 in 119.99s 
+04/27/2020, 05:48:52 epoch: 180; train_loss: 0.00218; vld_loss: 0.20020; score: 0.92009 in 119.17s 
+04/27/2020, 05:50:51 epoch: 181; train_loss: 0.00209; vld_loss: 0.20044; score: 0.92009 in 119.17s 
+04/27/2020, 05:52:50 epoch: 182; train_loss: 0.00209; vld_loss: 0.20121; score: 0.91995 in 119.15s 
+04/27/2020, 05:54:49 epoch: 183; train_loss: 0.00211; vld_loss: 0.20127; score: 0.92017 in 119.23s 
+04/27/2020, 05:56:49 epoch: 184; train_loss: 0.00206; vld_loss: 0.20170; score: 0.92000 in 119.13s 
+04/27/2020, 05:58:48 epoch: 185; train_loss: 0.00209; vld_loss: 0.20188; score: 0.91991 in 119.19s 
+04/27/2020, 06:00:47 epoch: 186; train_loss: 0.00211; vld_loss: 0.20184; score: 0.91979 in 119.21s 
+04/27/2020, 06:02:46 epoch: 187; train_loss: 0.00204; vld_loss: 0.20222; score: 0.91994 in 119.23s 
+04/27/2020, 06:04:45 epoch: 188; train_loss: 0.00203; vld_loss: 0.20238; score: 0.91996 in 119.28s 
+04/27/2020, 06:06:45 epoch: 189; train_loss: 0.00196; vld_loss: 0.20238; score: 0.91989 in 119.31s 
+04/27/2020, 06:08:44 epoch: 190; train_loss: 0.00202; vld_loss: 0.20259; score: 0.92002 in 119.20s 
+04/27/2020, 06:10:43 epoch: 191; train_loss: 0.00204; vld_loss: 0.20279; score: 0.92003 in 119.22s 
+04/27/2020, 06:12:42 epoch: 192; train_loss: 0.00199; vld_loss: 0.20296; score: 0.91997 in 119.18s 
+04/27/2020, 06:14:42 epoch: 193; train_loss: 0.00202; vld_loss: 0.20273; score: 0.92004 in 119.27s 
+04/27/2020, 06:16:41 epoch: 194; train_loss: 0.00205; vld_loss: 0.20259; score: 0.92006 in 119.18s 
+04/27/2020, 06:18:40 epoch: 195; train_loss: 0.00202; vld_loss: 0.20286; score: 0.91994 in 119.17s 
+04/27/2020, 06:20:39 epoch: 196; train_loss: 0.00196; vld_loss: 0.20262; score: 0.92005 in 119.21s 
+04/27/2020, 06:22:38 epoch: 197; train_loss: 0.00198; vld_loss: 0.20310; score: 0.91988 in 119.26s 
+04/27/2020, 06:24:38 epoch: 198; train_loss: 0.00201; vld_loss: 0.20261; score: 0.91999 in 119.20s 
+04/27/2020, 06:26:37 epoch: 199; train_loss: 0.00202; vld_loss: 0.20295; score: 0.91999 in 119.34s 
+04/27/2020, 06:26:37 Get subs ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 569, in train
+    test_dataset = IonTestDataset(test.transpose((0, 2, 1)), test_feats.values)
+NameError: name 'test_feats' is not defined
+04/27/2020, 06:26:40 ##################### Start ... ##################### 
+04/27/2020, 06:26:41 Reading Data Started ... 
+04/27/2020, 06:26:45 Feat imp... 
+04/27/2020, 06:27:10 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/27/2020, 06:27:10 Folding 
+04/27/2020, 06:27:14 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/27/2020, 06:27:14 Load models ... 
+04/27/2020, 06:27:18 Training ... 
+04/27/2020, 06:29:27 epoch: 0; train_loss: 0.21022; vld_loss: 0.05515; score: 0.93807 in 129.52s +
+04/27/2020, 06:31:35 epoch: 1; train_loss: 0.06059; vld_loss: 0.05043; score: 0.93776 in 127.42s 
+04/27/2020, 06:33:34 epoch: 2; train_loss: 0.05112; vld_loss: 0.04746; score: 0.93765 in 118.74s 
+04/27/2020, 06:35:32 epoch: 3; train_loss: 0.04911; vld_loss: 0.04525; score: 0.93797 in 118.67s 
+04/27/2020, 06:37:31 epoch: 4; train_loss: 0.04729; vld_loss: 0.04487; score: 0.93799 in 118.50s 
+04/27/2020, 06:39:29 epoch: 5; train_loss: 0.04648; vld_loss: 0.04425; score: 0.93749 in 118.16s 
+04/27/2020, 06:41:27 epoch: 6; train_loss: 0.04585; vld_loss: 0.04349; score: 0.93782 in 118.13s 
+04/27/2020, 06:43:25 epoch: 7; train_loss: 0.04550; vld_loss: 0.04318; score: 0.93823 in 118.27s +
+04/27/2020, 06:45:23 epoch: 8; train_loss: 0.04515; vld_loss: 0.04331; score: 0.93826 in 118.15s +
+04/27/2020, 06:47:28 epoch: 9; train_loss: 0.04468; vld_loss: 0.04271; score: 0.93825 in 124.45s 
+04/27/2020, 06:49:26 epoch: 10; train_loss: 0.04455; vld_loss: 0.04249; score: 0.93815 in 118.20s 
+04/27/2020, 06:51:24 epoch: 11; train_loss: 0.04415; vld_loss: 0.04218; score: 0.93839 in 118.27s +
+04/27/2020, 06:53:23 epoch: 12; train_loss: 0.04393; vld_loss: 0.04227; score: 0.93838 in 118.34s 
+04/27/2020, 06:55:21 epoch: 13; train_loss: 0.04386; vld_loss: 0.04229; score: 0.93870 in 118.38s +
+04/27/2020, 06:57:20 epoch: 14; train_loss: 0.04388; vld_loss: 0.04210; score: 0.93868 in 118.33s 
+04/27/2020, 06:59:18 epoch: 15; train_loss: 0.04351; vld_loss: 0.04200; score: 0.93859 in 118.34s 
+04/27/2020, 07:01:16 epoch: 16; train_loss: 0.04345; vld_loss: 0.04198; score: 0.93875 in 118.32s +
+04/27/2020, 07:03:15 epoch: 17; train_loss: 0.04330; vld_loss: 0.04185; score: 0.93869 in 118.34s 
+04/27/2020, 07:05:13 epoch: 18; train_loss: 0.04318; vld_loss: 0.04185; score: 0.93849 in 118.33s 
+04/27/2020, 07:07:11 epoch: 19; train_loss: 0.04318; vld_loss: 0.04195; score: 0.93880 in 118.29s +
+04/27/2020, 07:09:10 epoch: 20; train_loss: 0.04296; vld_loss: 0.04172; score: 0.93851 in 118.30s 
+04/27/2020, 07:11:08 epoch: 21; train_loss: 0.04290; vld_loss: 0.04181; score: 0.93878 in 118.10s 
+04/27/2020, 07:13:06 epoch: 22; train_loss: 0.04284; vld_loss: 0.04179; score: 0.93901 in 118.05s +
+04/27/2020, 07:15:04 epoch: 23; train_loss: 0.04275; vld_loss: 0.04188; score: 0.93871 in 118.13s 
+04/27/2020, 07:17:02 epoch: 24; train_loss: 0.04263; vld_loss: 0.04179; score: 0.93860 in 118.09s 
+04/27/2020, 07:19:00 epoch: 25; train_loss: 0.04264; vld_loss: 0.04164; score: 0.93907 in 118.05s +
+04/27/2020, 07:20:58 epoch: 26; train_loss: 0.04243; vld_loss: 0.04164; score: 0.93896 in 118.10s 
+04/27/2020, 07:22:56 epoch: 27; train_loss: 0.04219; vld_loss: 0.04167; score: 0.93911 in 118.10s +
+04/27/2020, 07:24:54 epoch: 28; train_loss: 0.04209; vld_loss: 0.04176; score: 0.93929 in 118.09s +
+04/27/2020, 07:26:52 epoch: 29; train_loss: 0.04219; vld_loss: 0.04214; score: 0.93850 in 118.03s 
+04/27/2020, 07:28:50 epoch: 30; train_loss: 0.04206; vld_loss: 0.04223; score: 0.93810 in 118.03s 
+04/27/2020, 07:30:49 epoch: 31; train_loss: 0.04169; vld_loss: 0.04224; score: 0.93838 in 118.10s 
+04/27/2020, 07:32:47 epoch: 32; train_loss: 0.04151; vld_loss: 0.04174; score: 0.93911 in 118.12s 
+04/27/2020, 07:34:45 epoch: 33; train_loss: 0.04140; vld_loss: 0.04173; score: 0.93900 in 118.07s 
+04/27/2020, 07:36:43 epoch: 34; train_loss: 0.04128; vld_loss: 0.04208; score: 0.93897 in 118.12s 
+04/27/2020, 07:38:41 epoch: 35; train_loss: 0.04112; vld_loss: 0.04205; score: 0.93886 in 118.42s 
+04/27/2020, 07:40:40 epoch: 36; train_loss: 0.04071; vld_loss: 0.04214; score: 0.93881 in 118.52s 
+04/27/2020, 07:42:38 epoch: 37; train_loss: 0.04051; vld_loss: 0.04248; score: 0.93858 in 118.45s 
+04/27/2020, 07:44:37 epoch: 38; train_loss: 0.04008; vld_loss: 0.04246; score: 0.93912 in 118.37s 
+04/27/2020, 07:46:35 epoch: 39; train_loss: 0.03999; vld_loss: 0.04275; score: 0.93819 in 118.41s 
+04/27/2020, 07:48:33 epoch: 40; train_loss: 0.03974; vld_loss: 0.04285; score: 0.93873 in 118.38s 
+04/27/2020, 07:50:32 epoch: 41; train_loss: 0.03936; vld_loss: 0.04370; score: 0.93788 in 118.42s 
+04/27/2020, 07:52:30 epoch: 42; train_loss: 0.03887; vld_loss: 0.04443; score: 0.93826 in 118.40s 
+04/27/2020, 07:54:29 epoch: 43; train_loss: 0.03849; vld_loss: 0.04474; score: 0.93735 in 118.38s 
+04/27/2020, 07:56:27 epoch: 44; train_loss: 0.03835; vld_loss: 0.04370; score: 0.93757 in 118.39s 
+04/27/2020, 07:58:25 epoch: 45; train_loss: 0.03758; vld_loss: 0.04430; score: 0.93802 in 118.35s 
+04/27/2020, 08:00:29 epoch: 46; train_loss: 0.03755; vld_loss: 0.04484; score: 0.93750 in 123.33s 
+04/27/2020, 08:02:27 epoch: 47; train_loss: 0.03684; vld_loss: 0.04549; score: 0.93687 in 118.23s 
+04/27/2020, 08:04:25 epoch: 48; train_loss: 0.03636; vld_loss: 0.04610; score: 0.93703 in 118.26s 
+04/27/2020, 08:06:23 epoch: 49; train_loss: 0.03548; vld_loss: 0.04695; score: 0.93602 in 118.24s 
+04/27/2020, 08:08:22 epoch: 50; train_loss: 0.03531; vld_loss: 0.04766; score: 0.93626 in 118.25s 
+04/27/2020, 08:10:20 epoch: 51; train_loss: 0.03446; vld_loss: 0.04850; score: 0.93605 in 118.04s 
+04/27/2020, 08:12:18 epoch: 52; train_loss: 0.03400; vld_loss: 0.04969; score: 0.93512 in 118.01s 
+04/27/2020, 08:14:16 epoch: 53; train_loss: 0.03358; vld_loss: 0.04996; score: 0.93510 in 118.05s 
+04/27/2020, 08:16:14 epoch: 54; train_loss: 0.03281; vld_loss: 0.05134; score: 0.93390 in 118.07s 
+04/27/2020, 08:18:12 epoch: 55; train_loss: 0.03221; vld_loss: 0.05226; score: 0.93433 in 118.15s 
+04/27/2020, 08:20:10 epoch: 56; train_loss: 0.03190; vld_loss: 0.05285; score: 0.93365 in 117.92s 
+04/27/2020, 08:22:08 epoch: 57; train_loss: 0.03164; vld_loss: 0.05263; score: 0.93447 in 117.99s 
+04/27/2020, 08:24:06 epoch: 58; train_loss: 0.03060; vld_loss: 0.05403; score: 0.93266 in 117.95s 
+04/27/2020, 08:26:04 epoch: 59; train_loss: 0.02988; vld_loss: 0.05642; score: 0.93350 in 117.94s 
+04/27/2020, 08:28:02 epoch: 60; train_loss: 0.03004; vld_loss: 0.05612; score: 0.93262 in 118.13s 
+04/27/2020, 08:30:00 epoch: 61; train_loss: 0.02875; vld_loss: 0.05777; score: 0.93255 in 118.20s 
+04/27/2020, 08:31:58 epoch: 62; train_loss: 0.02808; vld_loss: 0.05718; score: 0.93093 in 118.17s 
+04/27/2020, 08:33:58 epoch: 63; train_loss: 0.02831; vld_loss: 0.05883; score: 0.93093 in 119.45s 
+04/27/2020, 08:36:06 epoch: 64; train_loss: 0.02727; vld_loss: 0.06062; score: 0.93059 in 128.16s 
+04/27/2020, 08:38:04 epoch: 65; train_loss: 0.02654; vld_loss: 0.06255; score: 0.93085 in 118.41s 
+04/27/2020, 08:40:03 epoch: 66; train_loss: 0.02628; vld_loss: 0.06262; score: 0.93023 in 118.39s 
+04/27/2020, 08:42:01 epoch: 67; train_loss: 0.02521; vld_loss: 0.06387; score: 0.92875 in 118.37s 
+04/27/2020, 08:43:59 epoch: 68; train_loss: 0.02496; vld_loss: 0.06566; score: 0.92767 in 118.41s 
+04/27/2020, 08:45:58 epoch: 69; train_loss: 0.02472; vld_loss: 0.06601; score: 0.92814 in 118.37s 
+04/27/2020, 08:47:56 epoch: 70; train_loss: 0.02434; vld_loss: 0.06680; score: 0.92861 in 118.38s 
+04/27/2020, 08:49:55 epoch: 71; train_loss: 0.02368; vld_loss: 0.06956; score: 0.92727 in 118.37s 
+04/27/2020, 08:51:53 epoch: 72; train_loss: 0.02315; vld_loss: 0.06967; score: 0.92680 in 118.40s 
+04/27/2020, 08:53:51 epoch: 73; train_loss: 0.02258; vld_loss: 0.07090; score: 0.92737 in 118.35s 
+04/27/2020, 08:55:50 epoch: 74; train_loss: 0.02203; vld_loss: 0.07289; score: 0.92734 in 118.39s 
+04/27/2020, 08:57:48 epoch: 75; train_loss: 0.02160; vld_loss: 0.07346; score: 0.92619 in 118.37s 
+04/27/2020, 08:59:46 epoch: 76; train_loss: 0.02150; vld_loss: 0.07384; score: 0.92640 in 118.38s 
+04/27/2020, 09:01:45 epoch: 77; train_loss: 0.02076; vld_loss: 0.07738; score: 0.92655 in 118.46s 
+04/27/2020, 09:03:43 epoch: 78; train_loss: 0.02101; vld_loss: 0.07618; score: 0.92561 in 118.30s 
+04/27/2020, 09:05:42 epoch: 79; train_loss: 0.02008; vld_loss: 0.07883; score: 0.92569 in 118.35s 
+04/27/2020, 09:07:40 epoch: 80; train_loss: 0.01960; vld_loss: 0.07860; score: 0.92512 in 118.48s 
+04/27/2020, 09:09:39 epoch: 81; train_loss: 0.01915; vld_loss: 0.08135; score: 0.92351 in 118.61s 
+04/27/2020, 09:11:37 epoch: 82; train_loss: 0.01882; vld_loss: 0.08141; score: 0.92391 in 118.49s 
+04/27/2020, 09:13:36 epoch: 83; train_loss: 0.01859; vld_loss: 0.08386; score: 0.92378 in 118.44s 
+04/27/2020, 09:15:34 epoch: 84; train_loss: 0.01782; vld_loss: 0.08565; score: 0.92334 in 118.38s 
+04/27/2020, 09:17:32 epoch: 85; train_loss: 0.01754; vld_loss: 0.08514; score: 0.92207 in 118.40s 
+04/27/2020, 09:19:31 epoch: 86; train_loss: 0.01746; vld_loss: 0.08823; score: 0.92402 in 118.38s 
+04/27/2020, 09:21:29 epoch: 87; train_loss: 0.01735; vld_loss: 0.08910; score: 0.92408 in 118.51s 
+04/27/2020, 09:23:28 epoch: 88; train_loss: 0.01725; vld_loss: 0.08992; score: 0.92233 in 119.07s 
+04/27/2020, 09:25:36 epoch: 89; train_loss: 0.01628; vld_loss: 0.09087; score: 0.92283 in 127.95s 
+04/27/2020, 09:27:44 epoch: 90; train_loss: 0.01578; vld_loss: 0.09189; score: 0.92161 in 127.43s 
+04/27/2020, 09:29:42 epoch: 91; train_loss: 0.01559; vld_loss: 0.09351; score: 0.92270 in 118.76s 
+04/27/2020, 09:31:41 epoch: 92; train_loss: 0.01535; vld_loss: 0.09337; score: 0.92299 in 118.34s 
+04/27/2020, 09:33:39 epoch: 93; train_loss: 0.01507; vld_loss: 0.09707; score: 0.92265 in 118.32s 
+04/27/2020, 09:35:37 epoch: 94; train_loss: 0.01472; vld_loss: 0.09783; score: 0.92119 in 118.32s 
+04/27/2020, 09:37:36 epoch: 95; train_loss: 0.01441; vld_loss: 0.09850; score: 0.92070 in 118.34s 
+04/27/2020, 09:39:34 epoch: 96; train_loss: 0.01409; vld_loss: 0.09947; score: 0.92162 in 118.36s 
+04/27/2020, 09:41:32 epoch: 97; train_loss: 0.01386; vld_loss: 0.10144; score: 0.92160 in 118.30s 
+04/27/2020, 09:43:31 epoch: 98; train_loss: 0.01371; vld_loss: 0.10101; score: 0.92143 in 118.30s 
+04/27/2020, 09:45:29 epoch: 99; train_loss: 0.01324; vld_loss: 0.10275; score: 0.92039 in 118.35s 
+04/27/2020, 09:47:27 epoch: 100; train_loss: 0.01304; vld_loss: 0.10462; score: 0.92136 in 118.34s 
+04/27/2020, 09:49:26 epoch: 101; train_loss: 0.01251; vld_loss: 0.10730; score: 0.92035 in 118.31s 
+04/27/2020, 09:51:24 epoch: 102; train_loss: 0.01251; vld_loss: 0.10726; score: 0.92048 in 118.33s 
+04/27/2020, 09:53:22 epoch: 103; train_loss: 0.01221; vld_loss: 0.10759; score: 0.92051 in 118.30s 
+04/27/2020, 09:55:21 epoch: 104; train_loss: 0.01208; vld_loss: 0.11030; score: 0.92057 in 118.34s 
+04/27/2020, 09:57:19 epoch: 105; train_loss: 0.01166; vld_loss: 0.11035; score: 0.91969 in 118.34s 
+04/27/2020, 09:59:17 epoch: 106; train_loss: 0.01129; vld_loss: 0.11508; score: 0.92066 in 118.38s 
+04/27/2020, 10:01:16 epoch: 107; train_loss: 0.01141; vld_loss: 0.11226; score: 0.92073 in 118.39s 
+04/27/2020, 10:03:14 epoch: 108; train_loss: 0.01094; vld_loss: 0.11453; score: 0.91991 in 118.37s 
+04/27/2020, 10:05:13 epoch: 109; train_loss: 0.01069; vld_loss: 0.11572; score: 0.92077 in 118.38s 
+04/27/2020, 10:07:11 epoch: 110; train_loss: 0.01040; vld_loss: 0.11711; score: 0.92017 in 118.31s 
+04/27/2020, 10:09:09 epoch: 111; train_loss: 0.01048; vld_loss: 0.11817; score: 0.92028 in 118.34s 
+04/27/2020, 10:11:08 epoch: 112; train_loss: 0.01809; vld_loss: 0.05721; score: 0.92841 in 118.32s 
+04/27/2020, 10:13:06 epoch: 113; train_loss: 0.02803; vld_loss: 0.07566; score: 0.92310 in 118.47s 
+04/27/2020, 10:15:04 epoch: 114; train_loss: 0.01652; vld_loss: 0.09494; score: 0.92173 in 118.36s 
+04/27/2020, 10:17:03 epoch: 115; train_loss: 0.01289; vld_loss: 0.10494; score: 0.92137 in 118.54s 
+04/27/2020, 10:19:01 epoch: 116; train_loss: 0.01105; vld_loss: 0.11201; score: 0.92038 in 118.42s 
+04/27/2020, 10:21:00 epoch: 117; train_loss: 0.01069; vld_loss: 0.11413; score: 0.92046 in 118.35s 
+04/27/2020, 10:22:58 epoch: 118; train_loss: 0.01008; vld_loss: 0.11878; score: 0.91998 in 118.41s 
+04/27/2020, 10:24:56 epoch: 119; train_loss: 0.00946; vld_loss: 0.12151; score: 0.92008 in 118.28s 
+04/27/2020, 10:26:55 epoch: 120; train_loss: 0.00926; vld_loss: 0.12299; score: 0.92043 in 118.28s 
+04/27/2020, 10:28:53 epoch: 121; train_loss: 0.00881; vld_loss: 0.12596; score: 0.91956 in 118.40s 
+04/27/2020, 10:30:52 epoch: 122; train_loss: 0.00889; vld_loss: 0.12793; score: 0.92106 in 118.79s 
+04/27/2020, 10:32:50 epoch: 123; train_loss: 0.00853; vld_loss: 0.12956; score: 0.92084 in 118.24s 
+04/27/2020, 10:34:48 epoch: 124; train_loss: 0.00834; vld_loss: 0.13082; score: 0.92076 in 118.37s 
+04/27/2020, 10:36:47 epoch: 125; train_loss: 0.00810; vld_loss: 0.13213; score: 0.92071 in 118.34s 
+04/27/2020, 10:38:45 epoch: 126; train_loss: 0.00797; vld_loss: 0.13379; score: 0.92060 in 118.28s 
+04/27/2020, 10:40:44 epoch: 127; train_loss: 0.00783; vld_loss: 0.13536; score: 0.91894 in 119.32s 
+04/27/2020, 10:42:43 epoch: 128; train_loss: 0.00767; vld_loss: 0.13603; score: 0.91966 in 118.32s 
+04/27/2020, 10:44:41 epoch: 129; train_loss: 0.00746; vld_loss: 0.13792; score: 0.92023 in 118.25s 
+04/27/2020, 10:46:39 epoch: 130; train_loss: 0.00740; vld_loss: 0.13960; score: 0.92046 in 118.33s 
+04/27/2020, 10:48:38 epoch: 131; train_loss: 0.00723; vld_loss: 0.13947; score: 0.92050 in 118.28s 
+04/27/2020, 10:50:36 epoch: 132; train_loss: 0.00707; vld_loss: 0.14019; score: 0.91987 in 118.26s 
+04/27/2020, 10:52:34 epoch: 133; train_loss: 0.00691; vld_loss: 0.14296; score: 0.92012 in 118.25s 
+04/27/2020, 10:54:32 epoch: 134; train_loss: 0.00684; vld_loss: 0.14373; score: 0.92033 in 118.23s 
+04/27/2020, 10:56:31 epoch: 135; train_loss: 0.00668; vld_loss: 0.14572; score: 0.92076 in 118.27s 
+04/27/2020, 10:58:29 epoch: 136; train_loss: 0.00666; vld_loss: 0.14572; score: 0.92061 in 118.29s 
+04/27/2020, 11:00:27 epoch: 137; train_loss: 0.00651; vld_loss: 0.14736; score: 0.92071 in 118.29s 
+04/27/2020, 11:02:25 epoch: 138; train_loss: 0.00639; vld_loss: 0.14740; score: 0.92063 in 118.32s 
+04/27/2020, 11:04:24 epoch: 139; train_loss: 0.00637; vld_loss: 0.14849; score: 0.92058 in 118.38s 
+04/27/2020, 11:06:22 epoch: 140; train_loss: 0.00609; vld_loss: 0.15076; score: 0.92006 in 118.24s 
+04/27/2020, 11:08:20 epoch: 141; train_loss: 0.00606; vld_loss: 0.15162; score: 0.92014 in 118.36s 
+04/27/2020, 11:10:19 epoch: 142; train_loss: 0.00589; vld_loss: 0.15322; score: 0.91949 in 118.26s 
+04/27/2020, 11:12:17 epoch: 143; train_loss: 0.00586; vld_loss: 0.15383; score: 0.92002 in 118.33s 
+04/27/2020, 11:14:15 epoch: 144; train_loss: 0.00574; vld_loss: 0.15470; score: 0.91978 in 118.35s 
+04/27/2020, 11:16:14 epoch: 145; train_loss: 0.00565; vld_loss: 0.15526; score: 0.92003 in 118.32s 
+04/27/2020, 11:18:12 epoch: 146; train_loss: 0.00546; vld_loss: 0.15724; score: 0.91960 in 118.40s 
+04/27/2020, 11:20:11 epoch: 147; train_loss: 0.00529; vld_loss: 0.15820; score: 0.91975 in 118.38s 
+04/27/2020, 11:22:09 epoch: 148; train_loss: 0.00537; vld_loss: 0.15894; score: 0.91975 in 118.37s 
+04/27/2020, 11:24:07 epoch: 149; train_loss: 0.00524; vld_loss: 0.16012; score: 0.92017 in 118.30s 
+04/27/2020, 11:26:05 epoch: 150; train_loss: 0.00513; vld_loss: 0.16090; score: 0.91985 in 118.32s 
+04/27/2020, 11:28:04 epoch: 151; train_loss: 0.00492; vld_loss: 0.16290; score: 0.92080 in 118.33s 
+04/27/2020, 11:30:02 epoch: 152; train_loss: 0.00492; vld_loss: 0.16419; score: 0.92004 in 118.38s 
+04/27/2020, 11:32:00 epoch: 153; train_loss: 0.00480; vld_loss: 0.16431; score: 0.91996 in 118.27s 
+04/27/2020, 11:33:59 epoch: 154; train_loss: 0.00478; vld_loss: 0.16543; score: 0.92070 in 118.14s 
+04/27/2020, 11:35:57 epoch: 155; train_loss: 0.00469; vld_loss: 0.16694; score: 0.92024 in 118.28s 
+04/27/2020, 11:37:55 epoch: 156; train_loss: 0.00454; vld_loss: 0.16762; score: 0.92050 in 118.30s 
+04/27/2020, 11:39:54 epoch: 157; train_loss: 0.00450; vld_loss: 0.16875; score: 0.92004 in 118.37s 
+04/27/2020, 11:41:52 epoch: 158; train_loss: 0.00449; vld_loss: 0.16885; score: 0.92052 in 118.31s 
+04/27/2020, 11:43:50 epoch: 159; train_loss: 0.00435; vld_loss: 0.17055; score: 0.92044 in 118.34s 
+04/27/2020, 11:45:49 epoch: 160; train_loss: 0.00429; vld_loss: 0.17174; score: 0.92060 in 118.31s 
+04/27/2020, 11:47:47 epoch: 161; train_loss: 0.00416; vld_loss: 0.17287; score: 0.92025 in 118.27s 
+04/27/2020, 11:49:45 epoch: 162; train_loss: 0.00418; vld_loss: 0.17339; score: 0.92070 in 118.27s 
+04/27/2020, 11:51:43 epoch: 163; train_loss: 0.00412; vld_loss: 0.17454; score: 0.92061 in 118.27s 
+04/27/2020, 11:53:42 epoch: 164; train_loss: 0.00413; vld_loss: 0.17484; score: 0.92002 in 118.27s 
+04/27/2020, 11:55:40 epoch: 165; train_loss: 0.00405; vld_loss: 0.17571; score: 0.92033 in 118.29s 
+04/27/2020, 11:57:38 epoch: 166; train_loss: 0.00387; vld_loss: 0.17676; score: 0.92070 in 118.24s 
+04/27/2020, 11:59:37 epoch: 167; train_loss: 0.00387; vld_loss: 0.17735; score: 0.92037 in 118.46s 
+04/27/2020, 12:01:35 epoch: 168; train_loss: 0.00378; vld_loss: 0.17847; score: 0.92037 in 118.54s 
+04/27/2020, 12:03:34 epoch: 169; train_loss: 0.00365; vld_loss: 0.17934; score: 0.92030 in 118.53s 
+04/27/2020, 12:05:32 epoch: 170; train_loss: 0.00373; vld_loss: 0.18023; score: 0.92018 in 118.50s 
+04/27/2020, 12:07:31 epoch: 171; train_loss: 0.00369; vld_loss: 0.18032; score: 0.92036 in 118.49s 
+04/27/2020, 12:09:29 epoch: 172; train_loss: 0.00366; vld_loss: 0.18055; score: 0.92053 in 118.62s 
+04/27/2020, 12:11:28 epoch: 173; train_loss: 0.00358; vld_loss: 0.18103; score: 0.92074 in 118.63s 
+04/27/2020, 12:13:26 epoch: 174; train_loss: 0.00367; vld_loss: 0.18126; score: 0.92044 in 118.50s 
+04/27/2020, 12:15:25 epoch: 175; train_loss: 0.00361; vld_loss: 0.18154; score: 0.92029 in 118.58s 
+04/27/2020, 12:17:23 epoch: 176; train_loss: 0.00354; vld_loss: 0.18235; score: 0.92026 in 118.51s 
+04/27/2020, 12:19:22 epoch: 177; train_loss: 0.00351; vld_loss: 0.18269; score: 0.92045 in 118.47s 
+04/27/2020, 12:21:20 epoch: 178; train_loss: 0.00343; vld_loss: 0.18314; score: 0.92054 in 118.53s 
+04/27/2020, 12:23:19 epoch: 179; train_loss: 0.00341; vld_loss: 0.18353; score: 0.92008 in 118.50s 
+04/27/2020, 12:25:18 epoch: 180; train_loss: 0.00345; vld_loss: 0.18413; score: 0.92056 in 118.53s 
+04/27/2020, 12:27:16 epoch: 181; train_loss: 0.00335; vld_loss: 0.18416; score: 0.92054 in 118.48s 
+04/27/2020, 12:29:18 epoch: 182; train_loss: 0.00331; vld_loss: 0.18458; score: 0.92051 in 121.69s 
+04/27/2020, 12:31:24 epoch: 183; train_loss: 0.00335; vld_loss: 0.18492; score: 0.92037 in 126.14s 
+04/27/2020, 12:33:30 epoch: 184; train_loss: 0.00335; vld_loss: 0.18478; score: 0.92059 in 126.10s 
+04/27/2020, 12:35:36 epoch: 185; train_loss: 0.00337; vld_loss: 0.18505; score: 0.92037 in 125.99s 
+04/27/2020, 12:37:42 epoch: 186; train_loss: 0.00332; vld_loss: 0.18522; score: 0.92042 in 126.03s 
+04/27/2020, 12:39:48 epoch: 187; train_loss: 0.00332; vld_loss: 0.18559; score: 0.92033 in 126.13s 
+04/27/2020, 12:41:54 epoch: 188; train_loss: 0.00322; vld_loss: 0.18582; score: 0.92044 in 126.08s 
+04/27/2020, 12:44:00 epoch: 189; train_loss: 0.00324; vld_loss: 0.18564; score: 0.92049 in 126.08s 
+04/27/2020, 12:46:06 epoch: 190; train_loss: 0.00328; vld_loss: 0.18584; score: 0.92045 in 126.08s 
+04/27/2020, 12:48:12 epoch: 191; train_loss: 0.00332; vld_loss: 0.18578; score: 0.92051 in 126.12s 
+04/27/2020, 12:50:19 epoch: 192; train_loss: 0.00324; vld_loss: 0.18610; score: 0.92038 in 126.16s 
+04/27/2020, 12:52:25 epoch: 193; train_loss: 0.00323; vld_loss: 0.18612; score: 0.92052 in 126.10s 
+04/27/2020, 12:54:31 epoch: 194; train_loss: 0.00331; vld_loss: 0.18586; score: 0.92057 in 126.24s 
+04/27/2020, 12:56:37 epoch: 195; train_loss: 0.00323; vld_loss: 0.18606; score: 0.92047 in 126.13s 
+04/27/2020, 12:58:43 epoch: 196; train_loss: 0.00318; vld_loss: 0.18583; score: 0.92052 in 126.13s 
+04/27/2020, 13:00:49 epoch: 197; train_loss: 0.00321; vld_loss: 0.18633; score: 0.92038 in 126.19s 
+04/27/2020, 13:02:55 epoch: 198; train_loss: 0.00317; vld_loss: 0.18597; score: 0.92058 in 126.08s 
+04/27/2020, 13:05:02 epoch: 199; train_loss: 0.00322; vld_loss: 0.18603; score: 0.92054 in 126.08s 
+04/27/2020, 13:05:02 Get subs ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 569, in train
+    test_dataset = IonTestDataset(test.transpose((0, 2, 1)), test_feats.values)
+NameError: name 'test_feats' is not defined
+04/27/2020, 13:05:03 ##################### Start ... ##################### 
+04/27/2020, 13:05:03 Reading Data Started ... 
+04/27/2020, 13:05:06 Feat imp... 
+04/27/2020, 13:05:32 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/27/2020, 13:05:32 Folding 
+04/27/2020, 13:05:36 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/27/2020, 13:05:37 Load models ... 
+04/27/2020, 13:05:39 Training ... 
+04/27/2020, 13:07:35 epoch: 0; train_loss: 0.21210; vld_loss: 0.05280; score: 0.93786 in 116.43s +
+04/27/2020, 13:09:32 epoch: 1; train_loss: 0.05455; vld_loss: 0.04579; score: 0.93688 in 116.82s 
+04/27/2020, 13:11:29 epoch: 2; train_loss: 0.04935; vld_loss: 0.04449; score: 0.93790 in 116.51s +
+04/27/2020, 13:13:25 epoch: 3; train_loss: 0.04770; vld_loss: 0.04336; score: 0.93822 in 116.64s +
+04/27/2020, 13:15:22 epoch: 4; train_loss: 0.04668; vld_loss: 0.04272; score: 0.93746 in 116.63s 
+04/27/2020, 13:17:18 epoch: 5; train_loss: 0.04610; vld_loss: 0.04243; score: 0.93787 in 116.62s 
+04/27/2020, 13:19:15 epoch: 6; train_loss: 0.04547; vld_loss: 0.04187; score: 0.93795 in 116.57s 
+04/27/2020, 13:21:12 epoch: 7; train_loss: 0.04501; vld_loss: 0.04110; score: 0.93821 in 116.61s 
+04/27/2020, 13:23:08 epoch: 8; train_loss: 0.04459; vld_loss: 0.04086; score: 0.93836 in 116.72s +
+04/27/2020, 13:25:05 epoch: 9; train_loss: 0.04449; vld_loss: 0.04077; score: 0.93810 in 116.71s 
+04/27/2020, 13:27:02 epoch: 10; train_loss: 0.04415; vld_loss: 0.04074; score: 0.93767 in 116.63s 
+04/27/2020, 13:28:58 epoch: 11; train_loss: 0.04416; vld_loss: 0.04063; score: 0.93823 in 116.67s 
+04/27/2020, 13:30:55 epoch: 12; train_loss: 0.04385; vld_loss: 0.04069; score: 0.93864 in 116.74s +
+04/27/2020, 13:32:52 epoch: 13; train_loss: 0.04373; vld_loss: 0.04079; score: 0.93838 in 116.70s 
+04/27/2020, 13:34:49 epoch: 14; train_loss: 0.04372; vld_loss: 0.04050; score: 0.93831 in 116.74s 
+04/27/2020, 13:36:45 epoch: 15; train_loss: 0.04342; vld_loss: 0.04057; score: 0.93859 in 116.67s 
+04/27/2020, 13:38:42 epoch: 16; train_loss: 0.04331; vld_loss: 0.04057; score: 0.93871 in 116.69s +
+04/27/2020, 13:40:39 epoch: 17; train_loss: 0.04309; vld_loss: 0.04062; score: 0.93828 in 116.78s 
+04/27/2020, 13:42:35 epoch: 18; train_loss: 0.04315; vld_loss: 0.04072; score: 0.93825 in 116.67s 
+04/27/2020, 13:44:32 epoch: 19; train_loss: 0.04298; vld_loss: 0.04064; score: 0.93834 in 116.72s 
+04/27/2020, 13:46:29 epoch: 20; train_loss: 0.04273; vld_loss: 0.04055; score: 0.93860 in 116.73s 
+04/27/2020, 13:48:26 epoch: 21; train_loss: 0.04272; vld_loss: 0.04082; score: 0.93828 in 116.68s 
+04/27/2020, 13:50:22 epoch: 22; train_loss: 0.04238; vld_loss: 0.04080; score: 0.93843 in 116.72s 
+04/27/2020, 13:52:19 epoch: 23; train_loss: 0.04220; vld_loss: 0.04078; score: 0.93827 in 116.64s 
+04/27/2020, 13:54:16 epoch: 24; train_loss: 0.04211; vld_loss: 0.04070; score: 0.93877 in 116.71s +
+04/27/2020, 13:56:12 epoch: 25; train_loss: 0.04178; vld_loss: 0.04079; score: 0.93848 in 116.77s 
+04/27/2020, 13:58:09 epoch: 26; train_loss: 0.04166; vld_loss: 0.04196; score: 0.93841 in 116.78s 
+04/27/2020, 14:00:06 epoch: 27; train_loss: 0.04140; vld_loss: 0.04099; score: 0.93852 in 116.76s 
+04/27/2020, 14:02:03 epoch: 28; train_loss: 0.04107; vld_loss: 0.04099; score: 0.93850 in 116.78s 
+04/27/2020, 14:04:00 epoch: 29; train_loss: 0.04072; vld_loss: 0.04156; score: 0.93754 in 116.71s 
+04/27/2020, 14:05:56 epoch: 30; train_loss: 0.04032; vld_loss: 0.04174; score: 0.93811 in 116.75s 
+04/27/2020, 14:07:53 epoch: 31; train_loss: 0.04023; vld_loss: 0.04333; score: 0.93657 in 116.74s 
+04/27/2020, 14:09:50 epoch: 32; train_loss: 0.03976; vld_loss: 0.04218; score: 0.93769 in 116.68s 
+04/27/2020, 14:11:47 epoch: 33; train_loss: 0.03924; vld_loss: 0.04269; score: 0.93802 in 117.16s 
+04/27/2020, 14:13:44 epoch: 34; train_loss: 0.03884; vld_loss: 0.04286; score: 0.93744 in 116.79s 
+04/27/2020, 14:15:40 epoch: 35; train_loss: 0.03892; vld_loss: 0.04289; score: 0.93711 in 116.76s 
+04/27/2020, 14:17:37 epoch: 36; train_loss: 0.03810; vld_loss: 0.04359; score: 0.93748 in 116.70s 
+04/27/2020, 14:19:34 epoch: 37; train_loss: 0.03750; vld_loss: 0.04396; score: 0.93717 in 116.89s 
+04/27/2020, 14:21:31 epoch: 38; train_loss: 0.03672; vld_loss: 0.04460; score: 0.93687 in 116.94s 
+04/27/2020, 14:23:28 epoch: 39; train_loss: 0.03632; vld_loss: 0.04557; score: 0.93644 in 116.96s 
+04/27/2020, 14:25:25 epoch: 40; train_loss: 0.03611; vld_loss: 0.04557; score: 0.93639 in 116.90s 
+04/27/2020, 14:27:22 epoch: 41; train_loss: 0.03551; vld_loss: 0.04713; score: 0.93476 in 116.78s 
+04/27/2020, 14:29:18 epoch: 42; train_loss: 0.03455; vld_loss: 0.04730; score: 0.93556 in 116.87s 
+04/27/2020, 14:31:15 epoch: 43; train_loss: 0.03414; vld_loss: 0.04894; score: 0.93474 in 116.77s 
+04/27/2020, 14:33:12 epoch: 44; train_loss: 0.03431; vld_loss: 0.04853; score: 0.93540 in 116.83s 
+04/27/2020, 14:35:09 epoch: 45; train_loss: 0.03292; vld_loss: 0.04957; score: 0.93420 in 116.85s 
+04/27/2020, 14:37:06 epoch: 46; train_loss: 0.03263; vld_loss: 0.05107; score: 0.93416 in 116.81s 
+04/27/2020, 14:39:03 epoch: 47; train_loss: 0.03159; vld_loss: 0.05178; score: 0.93393 in 116.87s 
+04/27/2020, 14:40:59 epoch: 48; train_loss: 0.03079; vld_loss: 0.05250; score: 0.93305 in 116.91s 
+04/27/2020, 14:42:56 epoch: 49; train_loss: 0.03032; vld_loss: 0.05459; score: 0.93112 in 116.73s 
+04/27/2020, 14:44:53 epoch: 50; train_loss: 0.02997; vld_loss: 0.05479; score: 0.93227 in 116.76s 
+04/27/2020, 14:46:50 epoch: 51; train_loss: 0.02921; vld_loss: 0.05608; score: 0.93128 in 116.78s 
+04/27/2020, 14:48:47 epoch: 52; train_loss: 0.02872; vld_loss: 0.05787; score: 0.93084 in 116.78s 
+04/27/2020, 14:50:43 epoch: 53; train_loss: 0.02789; vld_loss: 0.05921; score: 0.93029 in 116.75s 
+04/27/2020, 14:52:40 epoch: 54; train_loss: 0.02727; vld_loss: 0.05988; score: 0.93030 in 116.73s 
+04/27/2020, 14:54:37 epoch: 55; train_loss: 0.02671; vld_loss: 0.06000; score: 0.92971 in 116.69s 
+04/27/2020, 14:56:33 epoch: 56; train_loss: 0.02652; vld_loss: 0.06232; score: 0.92982 in 116.74s 
+04/27/2020, 14:58:30 epoch: 57; train_loss: 0.02590; vld_loss: 0.06312; score: 0.92947 in 116.79s 
+04/27/2020, 15:00:27 epoch: 58; train_loss: 0.02595; vld_loss: 0.06316; score: 0.92663 in 116.77s 
+04/27/2020, 15:02:24 epoch: 59; train_loss: 0.02521; vld_loss: 0.06528; score: 0.92731 in 116.84s 
+04/27/2020, 15:04:21 epoch: 60; train_loss: 0.02501; vld_loss: 0.06336; score: 0.92809 in 116.72s 
+04/27/2020, 15:06:17 epoch: 61; train_loss: 0.02390; vld_loss: 0.06832; score: 0.92701 in 116.78s 
+04/27/2020, 15:08:14 epoch: 62; train_loss: 0.02305; vld_loss: 0.06815; score: 0.92692 in 116.82s 
+04/27/2020, 15:10:11 epoch: 63; train_loss: 0.02279; vld_loss: 0.07051; score: 0.92472 in 116.78s 
+04/27/2020, 15:12:08 epoch: 64; train_loss: 0.02239; vld_loss: 0.07348; score: 0.92155 in 116.82s 
+04/27/2020, 15:14:05 epoch: 65; train_loss: 0.02160; vld_loss: 0.07234; score: 0.92645 in 116.82s 
+04/27/2020, 15:16:01 epoch: 66; train_loss: 0.02145; vld_loss: 0.07292; score: 0.92568 in 116.82s 
+04/27/2020, 15:17:58 epoch: 67; train_loss: 0.02069; vld_loss: 0.07554; score: 0.92432 in 116.68s 
+04/27/2020, 15:19:55 epoch: 68; train_loss: 0.02028; vld_loss: 0.07407; score: 0.92384 in 116.79s 
+04/27/2020, 15:21:52 epoch: 69; train_loss: 0.02028; vld_loss: 0.07639; score: 0.92479 in 116.81s 
+04/27/2020, 15:23:49 epoch: 70; train_loss: 0.01952; vld_loss: 0.07969; score: 0.92358 in 116.82s 
+04/27/2020, 15:25:45 epoch: 71; train_loss: 0.01920; vld_loss: 0.07910; score: 0.92351 in 116.72s 
+04/27/2020, 15:27:42 epoch: 72; train_loss: 0.01866; vld_loss: 0.08073; score: 0.92271 in 116.79s 
+04/27/2020, 15:29:39 epoch: 73; train_loss: 0.01821; vld_loss: 0.08153; score: 0.92418 in 116.76s 
+04/27/2020, 15:31:36 epoch: 74; train_loss: 0.01754; vld_loss: 0.08318; score: 0.92378 in 116.74s 
+04/27/2020, 15:33:32 epoch: 75; train_loss: 0.01741; vld_loss: 0.08376; score: 0.92214 in 116.83s 
+04/27/2020, 15:35:29 epoch: 76; train_loss: 0.01716; vld_loss: 0.08597; score: 0.92369 in 116.79s 
+04/27/2020, 15:37:26 epoch: 77; train_loss: 0.01655; vld_loss: 0.08704; score: 0.92129 in 116.77s 
+04/27/2020, 15:39:23 epoch: 78; train_loss: 0.01660; vld_loss: 0.08682; score: 0.92334 in 116.80s 
+04/27/2020, 15:41:20 epoch: 79; train_loss: 0.01631; vld_loss: 0.08916; score: 0.92260 in 116.81s 
+04/27/2020, 15:43:16 epoch: 80; train_loss: 0.01566; vld_loss: 0.08987; score: 0.92206 in 116.77s 
+04/27/2020, 15:45:13 epoch: 81; train_loss: 0.01533; vld_loss: 0.08975; score: 0.92187 in 116.87s 
+04/27/2020, 15:47:10 epoch: 82; train_loss: 0.01547; vld_loss: 0.09135; score: 0.92198 in 116.82s 
+04/27/2020, 15:49:07 epoch: 83; train_loss: 0.01466; vld_loss: 0.09400; score: 0.92122 in 116.74s 
+04/27/2020, 15:51:04 epoch: 84; train_loss: 0.01428; vld_loss: 0.09599; score: 0.92120 in 116.75s 
+04/27/2020, 15:53:00 epoch: 85; train_loss: 0.01429; vld_loss: 0.09457; score: 0.92115 in 116.73s 
+04/27/2020, 15:54:57 epoch: 86; train_loss: 0.01378; vld_loss: 0.09813; score: 0.92248 in 116.78s 
+04/27/2020, 15:56:54 epoch: 87; train_loss: 0.01362; vld_loss: 0.09949; score: 0.92139 in 116.79s 
+04/27/2020, 15:58:51 epoch: 88; train_loss: 0.01345; vld_loss: 0.09954; score: 0.92016 in 116.74s 
+04/27/2020, 16:00:47 epoch: 89; train_loss: 0.01296; vld_loss: 0.09973; score: 0.92007 in 116.70s 
+04/27/2020, 16:02:44 epoch: 90; train_loss: 0.01258; vld_loss: 0.10223; score: 0.92174 in 116.64s 
+04/27/2020, 16:04:41 epoch: 91; train_loss: 0.01239; vld_loss: 0.10542; score: 0.92039 in 116.72s 
+04/27/2020, 16:06:37 epoch: 92; train_loss: 0.01253; vld_loss: 0.10257; score: 0.92018 in 116.73s 
+04/27/2020, 16:08:34 epoch: 93; train_loss: 0.01193; vld_loss: 0.10469; score: 0.91915 in 116.68s 
+04/27/2020, 16:10:31 epoch: 94; train_loss: 0.01173; vld_loss: 0.10704; score: 0.92158 in 117.01s 
+04/27/2020, 16:12:28 epoch: 95; train_loss: 0.01145; vld_loss: 0.10976; score: 0.92153 in 117.16s 
+04/27/2020, 16:14:34 epoch: 96; train_loss: 0.01104; vld_loss: 0.10894; score: 0.92027 in 125.85s 
+04/27/2020, 16:16:40 epoch: 97; train_loss: 0.01097; vld_loss: 0.10863; score: 0.91871 in 125.85s 
+04/27/2020, 16:18:46 epoch: 98; train_loss: 0.01071; vld_loss: 0.11025; score: 0.92034 in 125.74s 
+04/27/2020, 16:20:51 epoch: 99; train_loss: 0.01047; vld_loss: 0.11315; score: 0.92159 in 125.80s 
+04/27/2020, 16:22:57 epoch: 100; train_loss: 0.01032; vld_loss: 0.11348; score: 0.92119 in 126.02s 
+04/27/2020, 16:25:03 epoch: 101; train_loss: 0.00999; vld_loss: 0.11429; score: 0.92005 in 125.64s 
+04/27/2020, 16:27:11 epoch: 102; train_loss: 0.00986; vld_loss: 0.11645; score: 0.92062 in 127.68s 
+04/27/2020, 16:29:17 epoch: 103; train_loss: 0.00952; vld_loss: 0.11722; score: 0.92025 in 126.40s 
+04/27/2020, 16:31:23 epoch: 104; train_loss: 0.00962; vld_loss: 0.11873; score: 0.92064 in 125.71s 
+04/27/2020, 16:33:31 epoch: 105; train_loss: 0.00928; vld_loss: 0.11882; score: 0.92098 in 127.63s 
+04/27/2020, 16:35:36 epoch: 106; train_loss: 0.00877; vld_loss: 0.12440; score: 0.91997 in 125.79s 
+04/27/2020, 16:37:44 epoch: 107; train_loss: 0.00905; vld_loss: 0.12068; score: 0.92051 in 127.59s 
+04/27/2020, 16:39:49 epoch: 108; train_loss: 0.00859; vld_loss: 0.12292; score: 0.91900 in 125.33s 
+04/27/2020, 16:41:54 epoch: 109; train_loss: 0.00828; vld_loss: 0.12534; score: 0.92007 in 125.15s 
+04/27/2020, 16:43:59 epoch: 110; train_loss: 0.00820; vld_loss: 0.12545; score: 0.92058 in 125.05s 
+04/27/2020, 16:46:04 epoch: 111; train_loss: 0.00827; vld_loss: 0.12599; score: 0.92110 in 125.04s 
+04/27/2020, 16:48:10 epoch: 112; train_loss: 0.00812; vld_loss: 0.12536; score: 0.91899 in 125.61s 
+04/27/2020, 16:50:18 epoch: 113; train_loss: 0.00768; vld_loss: 0.13045; score: 0.92022 in 127.63s 
+04/27/2020, 16:52:25 epoch: 114; train_loss: 0.00760; vld_loss: 0.12946; score: 0.91985 in 127.69s 
+04/27/2020, 16:54:33 epoch: 115; train_loss: 0.00746; vld_loss: 0.13150; score: 0.91988 in 127.69s 
+04/27/2020, 16:56:39 epoch: 116; train_loss: 0.00710; vld_loss: 0.13489; score: 0.92027 in 125.76s 
+04/27/2020, 16:58:44 epoch: 117; train_loss: 0.00709; vld_loss: 0.13466; score: 0.91999 in 125.38s 
+04/27/2020, 17:00:41 epoch: 118; train_loss: 0.00694; vld_loss: 0.13543; score: 0.91860 in 117.24s 
+04/27/2020, 17:02:39 epoch: 119; train_loss: 0.00677; vld_loss: 0.13631; score: 0.91981 in 117.23s 
+04/27/2020, 17:04:36 epoch: 120; train_loss: 0.00669; vld_loss: 0.13891; score: 0.91982 in 117.18s 
+04/27/2020, 17:06:33 epoch: 121; train_loss: 0.00652; vld_loss: 0.13832; score: 0.92044 in 117.17s 
+04/27/2020, 17:08:30 epoch: 122; train_loss: 0.00670; vld_loss: 0.13891; score: 0.92066 in 117.21s 
+04/27/2020, 17:10:27 epoch: 123; train_loss: 0.00633; vld_loss: 0.14040; score: 0.91997 in 117.15s 
+04/27/2020, 17:12:25 epoch: 124; train_loss: 0.00611; vld_loss: 0.14191; score: 0.92036 in 117.15s 
+04/27/2020, 17:14:22 epoch: 125; train_loss: 0.00594; vld_loss: 0.14313; score: 0.92061 in 117.20s 
+04/27/2020, 17:16:19 epoch: 126; train_loss: 0.00594; vld_loss: 0.14404; score: 0.91924 in 117.17s 
+04/27/2020, 17:18:16 epoch: 127; train_loss: 0.00583; vld_loss: 0.14605; score: 0.92038 in 117.32s 
+04/27/2020, 17:20:13 epoch: 128; train_loss: 0.00560; vld_loss: 0.14653; score: 0.92043 in 117.16s 
+04/27/2020, 17:22:11 epoch: 129; train_loss: 0.00545; vld_loss: 0.14901; score: 0.92015 in 117.20s 
+04/27/2020, 17:24:08 epoch: 130; train_loss: 0.00540; vld_loss: 0.14961; score: 0.91982 in 117.30s 
+04/27/2020, 17:26:05 epoch: 131; train_loss: 0.00525; vld_loss: 0.15032; score: 0.91926 in 117.37s 
+04/27/2020, 17:28:02 epoch: 132; train_loss: 0.00531; vld_loss: 0.14974; score: 0.92017 in 117.01s 
+04/27/2020, 17:29:59 epoch: 133; train_loss: 0.00505; vld_loss: 0.15259; score: 0.92037 in 117.01s 
+04/27/2020, 17:31:58 epoch: 134; train_loss: 0.00491; vld_loss: 0.15388; score: 0.91956 in 118.57s 
+04/27/2020, 17:34:01 epoch: 135; train_loss: 0.00483; vld_loss: 0.15525; score: 0.92041 in 122.91s 
+04/27/2020, 17:35:58 epoch: 136; train_loss: 0.00478; vld_loss: 0.15699; score: 0.92023 in 117.21s 
+04/27/2020, 17:37:55 epoch: 137; train_loss: 0.00457; vld_loss: 0.15766; score: 0.92035 in 117.28s 
+04/27/2020, 17:40:00 epoch: 138; train_loss: 0.00446; vld_loss: 0.15867; score: 0.92045 in 124.35s 
+04/27/2020, 17:41:57 epoch: 139; train_loss: 0.00446; vld_loss: 0.16052; score: 0.91997 in 117.31s 
+04/27/2020, 17:43:54 epoch: 140; train_loss: 0.00430; vld_loss: 0.16103; score: 0.92064 in 116.97s 
+04/27/2020, 17:45:51 epoch: 141; train_loss: 0.00436; vld_loss: 0.16223; score: 0.92018 in 117.58s 
+04/27/2020, 17:47:49 epoch: 142; train_loss: 0.00421; vld_loss: 0.16324; score: 0.91983 in 117.86s 
+04/27/2020, 17:49:47 epoch: 143; train_loss: 0.00411; vld_loss: 0.16391; score: 0.92026 in 117.53s 
+04/27/2020, 17:51:53 epoch: 144; train_loss: 0.00407; vld_loss: 0.16447; score: 0.92056 in 125.83s 
+04/27/2020, 17:53:52 epoch: 145; train_loss: 0.00398; vld_loss: 0.16587; score: 0.92009 in 119.10s 
+04/27/2020, 17:55:53 epoch: 146; train_loss: 0.00378; vld_loss: 0.16739; score: 0.92009 in 121.67s 
+04/27/2020, 17:57:50 epoch: 147; train_loss: 0.00373; vld_loss: 0.16811; score: 0.91945 in 117.00s 
+04/27/2020, 17:59:48 epoch: 148; train_loss: 0.00383; vld_loss: 0.16865; score: 0.91981 in 117.09s 
+04/27/2020, 18:01:45 epoch: 149; train_loss: 0.00367; vld_loss: 0.17006; score: 0.91969 in 117.41s 
+04/27/2020, 18:03:42 epoch: 150; train_loss: 0.00356; vld_loss: 0.17067; score: 0.92001 in 117.20s 
+04/27/2020, 18:05:39 epoch: 151; train_loss: 0.00346; vld_loss: 0.17203; score: 0.92008 in 117.19s 
+04/27/2020, 18:07:37 epoch: 152; train_loss: 0.00347; vld_loss: 0.17313; score: 0.91997 in 117.34s 
+04/27/2020, 18:09:34 epoch: 153; train_loss: 0.00332; vld_loss: 0.17465; score: 0.92030 in 117.59s 
+04/27/2020, 18:11:35 epoch: 154; train_loss: 0.00332; vld_loss: 0.17511; score: 0.92021 in 121.10s 
+04/27/2020, 18:13:41 epoch: 155; train_loss: 0.00330; vld_loss: 0.17533; score: 0.92033 in 125.90s 
+04/27/2020, 18:15:44 epoch: 156; train_loss: 0.00316; vld_loss: 0.17647; score: 0.91998 in 122.60s 
+04/27/2020, 18:17:50 epoch: 157; train_loss: 0.00306; vld_loss: 0.17815; score: 0.92078 in 125.75s 
+04/27/2020, 18:19:51 epoch: 158; train_loss: 0.00310; vld_loss: 0.17847; score: 0.91996 in 121.57s 
+04/27/2020, 18:21:57 epoch: 159; train_loss: 0.00301; vld_loss: 0.17943; score: 0.92004 in 125.76s 
+04/27/2020, 18:24:03 epoch: 160; train_loss: 0.00299; vld_loss: 0.18013; score: 0.92057 in 125.91s 
+04/27/2020, 18:26:02 epoch: 161; train_loss: 0.00287; vld_loss: 0.18068; score: 0.92012 in 119.33s 
+04/27/2020, 18:27:59 epoch: 162; train_loss: 0.00286; vld_loss: 0.18235; score: 0.92033 in 117.17s 
+04/27/2020, 18:30:05 epoch: 163; train_loss: 0.00280; vld_loss: 0.18305; score: 0.92041 in 125.72s 
+04/27/2020, 18:32:11 epoch: 164; train_loss: 0.00279; vld_loss: 0.18369; score: 0.92019 in 125.65s 
+04/27/2020, 18:34:11 epoch: 165; train_loss: 0.00274; vld_loss: 0.18431; score: 0.92016 in 119.84s 
+04/27/2020, 18:36:19 epoch: 166; train_loss: 0.00263; vld_loss: 0.18558; score: 0.92034 in 128.62s 
+04/27/2020, 18:38:25 epoch: 167; train_loss: 0.00260; vld_loss: 0.18614; score: 0.92014 in 126.05s 
+04/27/2020, 18:40:31 epoch: 168; train_loss: 0.00253; vld_loss: 0.18715; score: 0.91971 in 125.66s 
+04/27/2020, 18:42:34 epoch: 169; train_loss: 0.00244; vld_loss: 0.18827; score: 0.92008 in 122.82s 
+04/27/2020, 18:44:37 epoch: 170; train_loss: 0.00254; vld_loss: 0.18827; score: 0.92041 in 123.33s 
+04/27/2020, 18:46:40 epoch: 171; train_loss: 0.00253; vld_loss: 0.18819; score: 0.92049 in 123.41s 
+04/27/2020, 18:48:43 epoch: 172; train_loss: 0.00246; vld_loss: 0.18918; score: 0.92014 in 122.23s 
+04/27/2020, 18:50:45 epoch: 173; train_loss: 0.00243; vld_loss: 0.18965; score: 0.92020 in 122.05s 
+04/27/2020, 18:52:47 epoch: 174; train_loss: 0.00241; vld_loss: 0.19004; score: 0.91987 in 122.54s 
+04/27/2020, 18:54:50 epoch: 175; train_loss: 0.00239; vld_loss: 0.19051; score: 0.92035 in 122.56s 
+04/27/2020, 18:56:51 epoch: 176; train_loss: 0.00232; vld_loss: 0.19119; score: 0.92011 in 121.51s 
+04/27/2020, 18:58:56 epoch: 177; train_loss: 0.00237; vld_loss: 0.19124; score: 0.92050 in 124.45s 
+04/27/2020, 19:01:00 epoch: 178; train_loss: 0.00226; vld_loss: 0.19197; score: 0.92032 in 124.61s 
+04/27/2020, 19:03:03 epoch: 179; train_loss: 0.00230; vld_loss: 0.19220; score: 0.92014 in 122.25s 
+04/27/2020, 19:05:05 epoch: 180; train_loss: 0.00224; vld_loss: 0.19254; score: 0.92026 in 122.52s 
+04/27/2020, 19:07:09 epoch: 181; train_loss: 0.00230; vld_loss: 0.19249; score: 0.92023 in 123.87s 
+04/27/2020, 19:09:12 epoch: 182; train_loss: 0.00220; vld_loss: 0.19309; score: 0.92036 in 122.44s 
+04/27/2020, 19:11:12 epoch: 183; train_loss: 0.00226; vld_loss: 0.19313; score: 0.92012 in 120.76s 
+04/27/2020, 19:13:16 epoch: 184; train_loss: 0.00218; vld_loss: 0.19350; score: 0.92038 in 123.82s 
+04/27/2020, 19:15:20 epoch: 185; train_loss: 0.00220; vld_loss: 0.19372; score: 0.92037 in 123.73s 
+04/27/2020, 19:17:22 epoch: 186; train_loss: 0.00224; vld_loss: 0.19375; score: 0.92035 in 122.16s 
+04/27/2020, 19:19:24 epoch: 187; train_loss: 0.00214; vld_loss: 0.19412; score: 0.92035 in 122.23s 
+04/27/2020, 19:21:26 epoch: 188; train_loss: 0.00217; vld_loss: 0.19409; score: 0.92038 in 121.81s 
+04/27/2020, 19:23:28 epoch: 189; train_loss: 0.00205; vld_loss: 0.19425; score: 0.92045 in 122.16s 
+04/27/2020, 19:25:29 epoch: 190; train_loss: 0.00211; vld_loss: 0.19453; score: 0.92034 in 121.04s 
+04/27/2020, 19:27:31 epoch: 191; train_loss: 0.00221; vld_loss: 0.19452; score: 0.92039 in 121.30s 
+04/27/2020, 19:29:34 epoch: 192; train_loss: 0.00209; vld_loss: 0.19472; score: 0.92036 in 123.10s 
+04/27/2020, 19:31:37 epoch: 193; train_loss: 0.00211; vld_loss: 0.19475; score: 0.92033 in 123.84s 
+04/27/2020, 19:33:40 epoch: 194; train_loss: 0.00214; vld_loss: 0.19458; score: 0.92034 in 122.41s 
+04/27/2020, 19:35:43 epoch: 195; train_loss: 0.00211; vld_loss: 0.19489; score: 0.92021 in 122.67s 
+04/27/2020, 19:37:44 epoch: 196; train_loss: 0.00212; vld_loss: 0.19467; score: 0.92031 in 121.88s 
+04/27/2020, 19:39:50 epoch: 197; train_loss: 0.00208; vld_loss: 0.19498; score: 0.92029 in 125.16s 
+04/27/2020, 19:41:52 epoch: 198; train_loss: 0.00211; vld_loss: 0.19474; score: 0.92033 in 122.66s 
+04/27/2020, 19:43:51 epoch: 199; train_loss: 0.00213; vld_loss: 0.19482; score: 0.92034 in 118.88s 
+04/27/2020, 19:43:51 Get subs ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 569, in train
+    test_dataset = IonTestDataset(test.transpose((0, 2, 1)), test_feats.values)
+NameError: name 'test_feats' is not defined
+04/27/2020, 19:43:53 ##################### Start ... ##################### 
+04/27/2020, 19:43:53 Reading Data Started ... 
+04/27/2020, 19:43:56 Feat imp... 
+04/27/2020, 19:44:21 Feat imp Done... ['signal', 'proba_0', 'proba_1', 'proba_2', 'proba_3', 'proba_4', 'proba_5', 'proba_6', 'proba_7', 'proba_8', 'proba_9', 'proba_10', 'signal_denoise_db1_2', 'signal_denoise_db2_2', 'signal_shift_pos_1', 'signal_shift_neg_1', 'signal_shift_pos_2', 'signal_shift_neg_2', 'signal_shift_pos_3', 'signal_shift_neg_3', 'signal_diff_shift_-1', 'signal_diff_shift_1', 'signal_cat_-2', 'signal_cat_-1', 'signal_cat_0', 'signal_cat_1', 'signal_cat_2', 'signal_cat_3', 'signal_2', 'signal_noised'] 
+04/27/2020, 19:44:21 Folding 
+04/27/2020, 19:44:25 train.shape (2500, 4000, 30) train_tr.shape (2500, 4000) test.shape (500, 4000, 30) 
+04/27/2020, 19:44:26 Load models ... 
+04/27/2020, 19:44:28 Training ... 
+04/27/2020, 19:46:29 epoch: 0; train_loss: 0.20856; vld_loss: 0.05594; score: 0.93803 in 121.48s +
+04/27/2020, 19:48:30 epoch: 1; train_loss: 0.05411; vld_loss: 0.04860; score: 0.93675 in 121.07s 
+04/27/2020, 19:50:30 epoch: 2; train_loss: 0.04889; vld_loss: 0.04574; score: 0.93776 in 120.23s 
+04/27/2020, 19:52:32 epoch: 3; train_loss: 0.04718; vld_loss: 0.04491; score: 0.93793 in 121.92s 
+04/27/2020, 19:54:34 epoch: 4; train_loss: 0.04623; vld_loss: 0.04382; score: 0.93791 in 121.81s 
+04/27/2020, 19:56:40 epoch: 5; train_loss: 0.04558; vld_loss: 0.04373; score: 0.93848 in 126.03s +
+04/27/2020, 19:58:44 epoch: 6; train_loss: 0.04512; vld_loss: 0.04344; score: 0.93788 in 124.13s 
+04/27/2020, 20:00:46 epoch: 7; train_loss: 0.04478; vld_loss: 0.04294; score: 0.93835 in 121.17s 
+04/27/2020, 20:02:48 epoch: 8; train_loss: 0.04445; vld_loss: 0.04287; score: 0.93865 in 122.93s +
+04/27/2020, 20:04:54 epoch: 9; train_loss: 0.04416; vld_loss: 0.04268; score: 0.93856 in 125.96s 
+04/27/2020, 20:06:58 epoch: 10; train_loss: 0.04403; vld_loss: 0.04328; score: 0.93819 in 123.74s 
+04/27/2020, 20:09:00 epoch: 11; train_loss: 0.04375; vld_loss: 0.04292; score: 0.93831 in 121.40s 
+04/27/2020, 20:11:01 epoch: 12; train_loss: 0.04369; vld_loss: 0.04245; score: 0.93852 in 121.50s 
+04/27/2020, 20:13:04 epoch: 13; train_loss: 0.04327; vld_loss: 0.04239; score: 0.93882 in 122.39s +
+04/27/2020, 20:15:05 epoch: 14; train_loss: 0.04310; vld_loss: 0.04249; score: 0.93860 in 121.19s 
+04/27/2020, 20:17:07 epoch: 15; train_loss: 0.04305; vld_loss: 0.04255; score: 0.93885 in 122.75s +
+04/27/2020, 20:19:09 epoch: 16; train_loss: 0.04288; vld_loss: 0.04274; score: 0.93876 in 121.40s 
+04/27/2020, 20:21:11 epoch: 17; train_loss: 0.04271; vld_loss: 0.04224; score: 0.93871 in 122.55s 
+04/27/2020, 20:23:15 epoch: 18; train_loss: 0.04261; vld_loss: 0.04296; score: 0.93861 in 123.49s 
+04/27/2020, 20:25:16 epoch: 19; train_loss: 0.04261; vld_loss: 0.04253; score: 0.93890 in 121.25s +
+04/27/2020, 20:27:21 epoch: 20; train_loss: 0.04223; vld_loss: 0.04263; score: 0.93870 in 124.53s 
+04/27/2020, 20:29:28 epoch: 21; train_loss: 0.04220; vld_loss: 0.04242; score: 0.93868 in 127.42s 
+04/27/2020, 20:31:31 epoch: 22; train_loss: 0.04191; vld_loss: 0.04247; score: 0.93885 in 122.81s 
+04/27/2020, 20:33:36 epoch: 23; train_loss: 0.04172; vld_loss: 0.04274; score: 0.93872 in 125.41s 
+04/27/2020, 20:35:38 epoch: 24; train_loss: 0.04163; vld_loss: 0.04265; score: 0.93860 in 121.11s 
+04/27/2020, 20:37:43 epoch: 25; train_loss: 0.04128; vld_loss: 0.04271; score: 0.93846 in 125.07s 
+04/27/2020, 20:39:46 epoch: 26; train_loss: 0.04103; vld_loss: 0.04248; score: 0.93920 in 123.55s +
+04/27/2020, 20:41:49 epoch: 27; train_loss: 0.07281; vld_loss: 0.04853; score: 0.93734 in 122.71s 
+04/27/2020, 20:43:51 epoch: 28; train_loss: 0.04786; vld_loss: 0.04386; score: 0.93843 in 121.87s 
+04/27/2020, 20:45:53 epoch: 29; train_loss: 0.04595; vld_loss: 0.04333; score: 0.93819 in 122.14s 
+04/27/2020, 20:47:57 epoch: 30; train_loss: 0.04505; vld_loss: 0.04281; score: 0.93859 in 123.82s 
+04/27/2020, 20:50:00 epoch: 31; train_loss: 0.04461; vld_loss: 0.04264; score: 0.93861 in 123.70s 
+04/27/2020, 20:52:04 epoch: 32; train_loss: 0.04429; vld_loss: 0.04248; score: 0.93851 in 123.48s 
+04/27/2020, 20:54:03 epoch: 33; train_loss: 0.04406; vld_loss: 0.04239; score: 0.93840 in 118.77s 
+04/27/2020, 20:56:00 epoch: 34; train_loss: 0.04387; vld_loss: 0.04223; score: 0.93887 in 117.69s 
+04/27/2020, 20:58:06 epoch: 35; train_loss: 0.04374; vld_loss: 0.04225; score: 0.93891 in 125.81s 
+04/27/2020, 21:00:08 epoch: 36; train_loss: 0.04360; vld_loss: 0.04216; score: 0.93863 in 122.22s 
+04/27/2020, 21:02:11 epoch: 37; train_loss: 0.04351; vld_loss: 0.04220; score: 0.93886 in 123.00s 
+04/27/2020, 21:04:14 epoch: 38; train_loss: 0.04341; vld_loss: 0.04204; score: 0.93884 in 122.25s 
+04/27/2020, 21:06:19 epoch: 39; train_loss: 0.04330; vld_loss: 0.04211; score: 0.93874 in 125.77s 
+04/27/2020, 21:08:22 epoch: 40; train_loss: 0.04329; vld_loss: 0.04194; score: 0.93896 in 122.17s 
+04/27/2020, 21:10:21 epoch: 41; train_loss: 0.04313; vld_loss: 0.04195; score: 0.93870 in 119.74s 
+04/27/2020, 21:12:19 epoch: 42; train_loss: 0.04305; vld_loss: 0.04194; score: 0.93910 in 117.28s 
+04/27/2020, 21:14:19 epoch: 43; train_loss: 0.04297; vld_loss: 0.04192; score: 0.93905 in 120.89s 
+04/27/2020, 21:16:24 epoch: 44; train_loss: 0.04293; vld_loss: 0.04181; score: 0.93924 in 124.45s +
+04/27/2020, 21:18:28 epoch: 45; train_loss: 0.04286; vld_loss: 0.04184; score: 0.93901 in 124.19s 
+04/27/2020, 21:20:31 epoch: 46; train_loss: 0.04276; vld_loss: 0.04181; score: 0.93898 in 122.83s 
+04/27/2020, 21:22:36 epoch: 47; train_loss: 0.04273; vld_loss: 0.04171; score: 0.93915 in 124.60s 
+04/27/2020, 21:24:41 epoch: 48; train_loss: 0.04269; vld_loss: 0.04197; score: 0.93892 in 125.38s 
+04/27/2020, 21:26:44 epoch: 49; train_loss: 0.04267; vld_loss: 0.04176; score: 0.93921 in 123.17s 
+04/27/2020, 21:28:50 epoch: 50; train_loss: 0.04260; vld_loss: 0.04164; score: 0.93942 in 125.97s +
+04/27/2020, 21:30:53 epoch: 51; train_loss: 0.04247; vld_loss: 0.04163; score: 0.93952 in 122.69s +
+04/27/2020, 21:32:56 epoch: 52; train_loss: 0.04242; vld_loss: 0.04172; score: 0.93932 in 123.59s 
+04/27/2020, 21:35:00 epoch: 53; train_loss: 0.04241; vld_loss: 0.04163; score: 0.93930 in 123.16s 
+04/27/2020, 21:37:03 epoch: 54; train_loss: 0.04237; vld_loss: 0.04159; score: 0.93954 in 123.74s +
+04/27/2020, 21:39:07 epoch: 55; train_loss: 0.04226; vld_loss: 0.04174; score: 0.93920 in 123.89s 
+04/27/2020, 21:41:11 epoch: 56; train_loss: 0.04224; vld_loss: 0.04214; score: 0.93883 in 123.21s 
+04/27/2020, 21:43:15 epoch: 57; train_loss: 0.04219; vld_loss: 0.04154; score: 0.93939 in 124.85s 
+04/27/2020, 21:45:18 epoch: 58; train_loss: 0.04210; vld_loss: 0.04183; score: 0.93931 in 122.61s 
+04/27/2020, 21:47:19 epoch: 59; train_loss: 0.04210; vld_loss: 0.04201; score: 0.93925 in 121.47s 
+04/27/2020, 21:49:25 epoch: 60; train_loss: 0.04208; vld_loss: 0.04163; score: 0.93920 in 125.59s 
+04/27/2020, 21:51:28 epoch: 61; train_loss: 0.04203; vld_loss: 0.04143; score: 0.93981 in 123.22s +
+04/27/2020, 21:53:32 epoch: 62; train_loss: 0.04190; vld_loss: 0.04164; score: 0.93963 in 123.84s 
+04/27/2020, 21:55:34 epoch: 63; train_loss: 0.04202; vld_loss: 0.04145; score: 0.93951 in 121.96s 
+04/27/2020, 21:57:40 epoch: 64; train_loss: 0.04187; vld_loss: 0.04157; score: 0.93940 in 125.65s 
+04/27/2020, 21:59:44 epoch: 65; train_loss: 0.04179; vld_loss: 0.04145; score: 0.93952 in 124.26s 
+04/27/2020, 22:01:50 epoch: 66; train_loss: 0.04170; vld_loss: 0.04160; score: 0.93924 in 125.92s 
+04/27/2020, 22:03:53 epoch: 67; train_loss: 0.04170; vld_loss: 0.04167; score: 0.93956 in 122.99s 
+04/27/2020, 22:05:56 epoch: 68; train_loss: 0.04156; vld_loss: 0.04147; score: 0.93949 in 122.61s 
+04/27/2020, 22:07:57 epoch: 69; train_loss: 0.04167; vld_loss: 0.04155; score: 0.93950 in 121.38s 
+04/27/2020, 22:09:59 epoch: 70; train_loss: 0.04157; vld_loss: 0.04181; score: 0.93923 in 121.69s 
+04/27/2020, 22:12:03 epoch: 71; train_loss: 0.04143; vld_loss: 0.04159; score: 0.93925 in 124.82s 
+04/27/2020, 22:14:05 epoch: 72; train_loss: 0.04141; vld_loss: 0.04168; score: 0.93919 in 121.84s 
+04/27/2020, 22:16:12 epoch: 73; train_loss: 0.04134; vld_loss: 0.04165; score: 0.93961 in 126.27s 
+04/27/2020, 22:18:16 epoch: 74; train_loss: 0.04126; vld_loss: 0.04168; score: 0.93933 in 124.49s 
+04/27/2020, 22:20:19 epoch: 75; train_loss: 0.04111; vld_loss: 0.04147; score: 0.93988 in 122.69s +
+04/27/2020, 22:22:20 epoch: 76; train_loss: 0.04106; vld_loss: 0.04158; score: 0.93979 in 120.97s 
+04/27/2020, 22:24:19 epoch: 77; train_loss: 0.04097; vld_loss: 0.04162; score: 0.93983 in 119.44s 
+04/27/2020, 22:26:20 epoch: 78; train_loss: 0.04095; vld_loss: 0.04175; score: 0.93922 in 121.27s 
+04/27/2020, 22:28:25 epoch: 79; train_loss: 0.04083; vld_loss: 0.04142; score: 0.93971 in 124.26s 
+04/27/2020, 22:30:29 epoch: 80; train_loss: 0.04068; vld_loss: 0.04174; score: 0.93934 in 124.29s 
+04/27/2020, 22:32:33 epoch: 81; train_loss: 0.04073; vld_loss: 0.04148; score: 0.93978 in 124.01s 
+04/27/2020, 22:34:33 epoch: 82; train_loss: 0.04063; vld_loss: 0.04208; score: 0.93898 in 119.95s 
+04/27/2020, 22:36:33 epoch: 83; train_loss: 0.04053; vld_loss: 0.04150; score: 0.93995 in 120.50s +
+04/27/2020, 22:38:38 epoch: 84; train_loss: 0.04035; vld_loss: 0.04170; score: 0.93975 in 124.45s 
+04/27/2020, 22:40:37 epoch: 85; train_loss: 0.04028; vld_loss: 0.04160; score: 0.94002 in 119.54s +
+04/27/2020, 22:42:44 epoch: 86; train_loss: 0.04016; vld_loss: 0.04175; score: 0.93958 in 126.08s 
+04/27/2020, 22:44:45 epoch: 87; train_loss: 0.04005; vld_loss: 0.04201; score: 0.93891 in 121.80s 
+04/27/2020, 22:46:47 epoch: 88; train_loss: 0.04002; vld_loss: 0.04201; score: 0.93943 in 121.22s 
+04/27/2020, 22:48:48 epoch: 89; train_loss: 0.03982; vld_loss: 0.04178; score: 0.93965 in 121.63s 
+04/27/2020, 22:50:55 epoch: 90; train_loss: 0.03969; vld_loss: 0.04213; score: 0.93912 in 126.33s 
+04/27/2020, 22:52:55 epoch: 91; train_loss: 0.03974; vld_loss: 0.04204; score: 0.93916 in 120.63s 
+04/27/2020, 22:55:01 epoch: 92; train_loss: 0.03941; vld_loss: 0.04209; score: 0.93902 in 125.76s 
+04/27/2020, 22:57:01 epoch: 93; train_loss: 0.03929; vld_loss: 0.04197; score: 0.93972 in 120.23s 
+04/27/2020, 22:59:06 epoch: 94; train_loss: 0.03913; vld_loss: 0.04225; score: 0.93901 in 124.59s 
+04/27/2020, 23:01:05 epoch: 95; train_loss: 0.03911; vld_loss: 0.04188; score: 0.93991 in 119.67s 
+04/27/2020, 23:03:06 epoch: 96; train_loss: 0.03891; vld_loss: 0.04219; score: 0.93912 in 120.92s 
+04/27/2020, 23:05:07 epoch: 97; train_loss: 0.03887; vld_loss: 0.04211; score: 0.93968 in 120.27s 
+04/27/2020, 23:07:06 epoch: 98; train_loss: 0.03869; vld_loss: 0.04268; score: 0.93862 in 119.01s 
+04/27/2020, 23:09:02 epoch: 99; train_loss: 0.03846; vld_loss: 0.04233; score: 0.93916 in 116.82s 
+04/27/2020, 23:11:00 epoch: 100; train_loss: 0.03849; vld_loss: 0.04257; score: 0.93922 in 117.09s 
+04/27/2020, 23:13:00 epoch: 101; train_loss: 0.03814; vld_loss: 0.04246; score: 0.93921 in 120.84s 
+04/27/2020, 23:15:03 epoch: 102; train_loss: 0.03798; vld_loss: 0.04259; score: 0.93953 in 122.56s 
+04/27/2020, 23:17:04 epoch: 103; train_loss: 0.03787; vld_loss: 0.06518; score: 0.93474 in 120.63s 
+04/27/2020, 23:19:03 epoch: 104; train_loss: 0.04196; vld_loss: 0.04205; score: 0.93955 in 119.80s 
+04/27/2020, 23:21:05 epoch: 105; train_loss: 0.03976; vld_loss: 0.04189; score: 0.93969 in 121.63s 
+04/27/2020, 23:23:07 epoch: 106; train_loss: 0.03919; vld_loss: 0.04187; score: 0.93991 in 122.02s 
+04/27/2020, 23:25:07 epoch: 107; train_loss: 0.03872; vld_loss: 0.04200; score: 0.93993 in 119.59s 
+04/27/2020, 23:27:08 epoch: 108; train_loss: 0.03841; vld_loss: 0.04232; score: 0.93921 in 121.65s 
+04/27/2020, 23:29:09 epoch: 109; train_loss: 0.03818; vld_loss: 0.04226; score: 0.93980 in 120.47s 
+04/27/2020, 23:31:11 epoch: 110; train_loss: 0.03789; vld_loss: 0.04238; score: 0.93940 in 122.25s 
+04/27/2020, 23:33:12 epoch: 111; train_loss: 0.03775; vld_loss: 0.04274; score: 0.93930 in 121.36s 
+04/27/2020, 23:35:12 epoch: 112; train_loss: 0.03758; vld_loss: 0.04261; score: 0.93937 in 120.03s 
+04/27/2020, 23:37:12 epoch: 113; train_loss: 0.03736; vld_loss: 0.04304; score: 0.93879 in 119.77s 
+04/27/2020, 23:39:14 epoch: 114; train_loss: 0.03720; vld_loss: 0.04322; score: 0.93855 in 121.77s 
+04/27/2020, 23:41:21 epoch: 115; train_loss: 0.03701; vld_loss: 0.04343; score: 0.93903 in 126.62s 
+04/27/2020, 23:43:25 epoch: 116; train_loss: 0.03684; vld_loss: 0.04319; score: 0.93904 in 124.21s 
+04/27/2020, 23:45:25 epoch: 117; train_loss: 0.03671; vld_loss: 0.04314; score: 0.93903 in 120.36s 
+04/27/2020, 23:47:25 epoch: 118; train_loss: 0.03653; vld_loss: 0.04365; score: 0.93877 in 119.49s 
+04/27/2020, 23:49:24 epoch: 119; train_loss: 0.03638; vld_loss: 0.04373; score: 0.93873 in 119.15s 
+04/27/2020, 23:51:26 epoch: 120; train_loss: 0.03622; vld_loss: 0.04364; score: 0.93847 in 122.70s 
+04/27/2020, 23:53:29 epoch: 121; train_loss: 0.03607; vld_loss: 0.04387; score: 0.93872 in 122.33s 
+04/27/2020, 23:55:30 epoch: 122; train_loss: 0.03595; vld_loss: 0.04407; score: 0.93842 in 121.69s 
+04/27/2020, 23:57:31 epoch: 123; train_loss: 0.03576; vld_loss: 0.04416; score: 0.93829 in 120.52s 
+04/27/2020, 23:59:31 epoch: 124; train_loss: 0.03567; vld_loss: 0.04461; score: 0.93834 in 120.35s 
+04/28/2020, 00:01:31 epoch: 125; train_loss: 0.03545; vld_loss: 0.04441; score: 0.93861 in 119.87s 
+04/28/2020, 00:03:31 epoch: 126; train_loss: 0.03524; vld_loss: 0.04488; score: 0.93779 in 119.64s 
+04/28/2020, 00:05:32 epoch: 127; train_loss: 0.03506; vld_loss: 0.04523; score: 0.93774 in 121.34s 
+04/28/2020, 00:07:32 epoch: 128; train_loss: 0.03494; vld_loss: 0.04501; score: 0.93842 in 119.67s 
+04/28/2020, 00:09:32 epoch: 129; train_loss: 0.03478; vld_loss: 0.04526; score: 0.93824 in 120.18s 
+04/28/2020, 00:11:33 epoch: 130; train_loss: 0.03463; vld_loss: 0.04545; score: 0.93805 in 120.58s 
+04/28/2020, 00:13:34 epoch: 131; train_loss: 0.03445; vld_loss: 0.04582; score: 0.93768 in 121.10s 
+04/28/2020, 00:15:36 epoch: 132; train_loss: 0.03425; vld_loss: 0.04567; score: 0.93761 in 122.56s 
+04/28/2020, 00:17:38 epoch: 133; train_loss: 0.03409; vld_loss: 0.04608; score: 0.93772 in 122.03s 
+04/28/2020, 00:19:41 epoch: 134; train_loss: 0.03394; vld_loss: 0.04648; score: 0.93764 in 122.38s 
+04/28/2020, 00:21:40 epoch: 135; train_loss: 0.03377; vld_loss: 0.04658; score: 0.93767 in 119.64s 
+04/28/2020, 00:23:40 epoch: 136; train_loss: 0.03357; vld_loss: 0.04682; score: 0.93720 in 120.09s 
+04/28/2020, 00:25:41 epoch: 137; train_loss: 0.03338; vld_loss: 0.04720; score: 0.93690 in 120.52s 
+04/28/2020, 00:27:41 epoch: 138; train_loss: 0.03319; vld_loss: 0.04713; score: 0.93734 in 119.92s 
+04/28/2020, 00:29:43 epoch: 139; train_loss: 0.03308; vld_loss: 0.04756; score: 0.93722 in 122.04s 
+04/28/2020, 00:31:46 epoch: 140; train_loss: 0.03292; vld_loss: 0.04790; score: 0.93699 in 122.74s 
+04/28/2020, 00:33:48 epoch: 141; train_loss: 0.03274; vld_loss: 0.04788; score: 0.93707 in 122.76s 
+04/28/2020, 00:35:48 epoch: 142; train_loss: 0.03255; vld_loss: 0.04798; score: 0.93712 in 119.24s 
+04/28/2020, 00:37:53 epoch: 143; train_loss: 0.03241; vld_loss: 0.04834; score: 0.93676 in 125.62s 
+04/28/2020, 00:39:54 epoch: 144; train_loss: 0.03231; vld_loss: 0.04854; score: 0.93658 in 120.88s 
+04/28/2020, 00:41:54 epoch: 145; train_loss: 0.03215; vld_loss: 0.04849; score: 0.93670 in 120.26s 
+04/28/2020, 00:43:54 epoch: 146; train_loss: 0.03193; vld_loss: 0.04928; score: 0.93628 in 119.99s 
+04/28/2020, 00:45:55 epoch: 147; train_loss: 0.03177; vld_loss: 0.04913; score: 0.93615 in 120.77s 
+04/28/2020, 00:48:00 epoch: 148; train_loss: 0.03165; vld_loss: 0.04986; score: 0.93639 in 124.71s 
+04/28/2020, 00:50:00 epoch: 149; train_loss: 0.03150; vld_loss: 0.04984; score: 0.93575 in 120.03s 
+04/28/2020, 00:52:01 epoch: 150; train_loss: 0.03138; vld_loss: 0.04988; score: 0.93582 in 121.23s 
+04/28/2020, 00:54:05 epoch: 151; train_loss: 0.03121; vld_loss: 0.05027; score: 0.93584 in 123.57s 
+04/28/2020, 00:56:10 epoch: 152; train_loss: 0.03102; vld_loss: 0.05062; score: 0.93603 in 124.83s 
+04/28/2020, 00:58:09 epoch: 153; train_loss: 0.03090; vld_loss: 0.05070; score: 0.93575 in 119.87s 
+04/28/2020, 01:00:09 epoch: 154; train_loss: 0.03075; vld_loss: 0.05116; score: 0.93561 in 119.71s 
+04/28/2020, 01:02:14 epoch: 155; train_loss: 0.03068; vld_loss: 0.05135; score: 0.93553 in 125.33s 
+04/28/2020, 01:04:12 epoch: 156; train_loss: 0.03048; vld_loss: 0.05151; score: 0.93530 in 117.64s 
+04/28/2020, 01:06:09 epoch: 157; train_loss: 0.03037; vld_loss: 0.05172; score: 0.93525 in 116.65s 
+04/28/2020, 01:08:08 epoch: 158; train_loss: 0.03030; vld_loss: 0.05191; score: 0.93547 in 119.04s 
+04/28/2020, 01:10:07 epoch: 159; train_loss: 0.03012; vld_loss: 0.05222; score: 0.93526 in 119.38s 
+04/28/2020, 01:12:11 epoch: 160; train_loss: 0.03005; vld_loss: 0.05230; score: 0.93506 in 124.05s 
+04/28/2020, 01:14:15 epoch: 161; train_loss: 0.02990; vld_loss: 0.05259; score: 0.93475 in 123.65s 
+04/28/2020, 01:16:14 epoch: 162; train_loss: 0.02980; vld_loss: 0.05263; score: 0.93499 in 119.28s 
+04/28/2020, 01:18:14 epoch: 163; train_loss: 0.02973; vld_loss: 0.05317; score: 0.93468 in 119.39s 
+04/28/2020, 01:20:12 epoch: 164; train_loss: 0.02966; vld_loss: 0.05307; score: 0.93454 in 118.73s 
+04/28/2020, 01:22:12 epoch: 165; train_loss: 0.02960; vld_loss: 0.05329; score: 0.93486 in 119.32s 
+04/28/2020, 01:24:11 epoch: 166; train_loss: 0.02940; vld_loss: 0.05345; score: 0.93482 in 119.72s 
+04/28/2020, 01:26:17 epoch: 167; train_loss: 0.02935; vld_loss: 0.05348; score: 0.93434 in 125.45s 
+04/28/2020, 01:28:22 epoch: 168; train_loss: 0.02929; vld_loss: 0.05373; score: 0.93429 in 124.75s 
+04/28/2020, 01:30:27 epoch: 169; train_loss: 0.02915; vld_loss: 0.05410; score: 0.93449 in 125.09s 
+04/28/2020, 01:32:26 epoch: 170; train_loss: 0.02912; vld_loss: 0.05426; score: 0.93417 in 119.24s 
+04/28/2020, 01:34:29 epoch: 171; train_loss: 0.02908; vld_loss: 0.05438; score: 0.93421 in 122.86s 
+04/28/2020, 01:36:35 epoch: 172; train_loss: 0.02898; vld_loss: 0.05453; score: 0.93394 in 125.97s 
+04/28/2020, 01:38:34 epoch: 173; train_loss: 0.02889; vld_loss: 0.05455; score: 0.93400 in 119.51s 
+04/28/2020, 01:40:34 epoch: 174; train_loss: 0.02890; vld_loss: 0.05463; score: 0.93418 in 120.05s 
+04/28/2020, 01:42:37 epoch: 175; train_loss: 0.02881; vld_loss: 0.05477; score: 0.93412 in 122.44s 
+04/28/2020, 01:44:39 epoch: 176; train_loss: 0.02872; vld_loss: 0.05490; score: 0.93392 in 122.50s 
+04/28/2020, 01:46:39 epoch: 177; train_loss: 0.02877; vld_loss: 0.05488; score: 0.93394 in 119.46s 
+04/28/2020, 01:48:38 epoch: 178; train_loss: 0.02869; vld_loss: 0.05530; score: 0.93404 in 119.78s 
+04/28/2020, 01:50:41 epoch: 179; train_loss: 0.02864; vld_loss: 0.05511; score: 0.93391 in 122.99s 
+04/28/2020, 01:52:42 epoch: 180; train_loss: 0.02864; vld_loss: 0.05523; score: 0.93387 in 121.09s 
+04/28/2020, 01:54:48 epoch: 181; train_loss: 0.02857; vld_loss: 0.05510; score: 0.93379 in 125.31s 
+04/28/2020, 01:56:48 epoch: 182; train_loss: 0.02853; vld_loss: 0.05521; score: 0.93373 in 119.79s 
+04/28/2020, 01:58:55 epoch: 183; train_loss: 0.02854; vld_loss: 0.05544; score: 0.93361 in 127.16s 
+04/28/2020, 02:00:54 epoch: 184; train_loss: 0.02851; vld_loss: 0.05549; score: 0.93365 in 119.56s 
+04/28/2020, 02:02:56 epoch: 185; train_loss: 0.02852; vld_loss: 0.05544; score: 0.93367 in 121.68s 
+04/28/2020, 02:04:56 epoch: 186; train_loss: 0.02847; vld_loss: 0.05537; score: 0.93367 in 119.67s 
+04/28/2020, 02:06:57 epoch: 187; train_loss: 0.02843; vld_loss: 0.05557; score: 0.93358 in 121.33s 
+04/28/2020, 02:08:57 epoch: 188; train_loss: 0.02836; vld_loss: 0.05553; score: 0.93358 in 120.51s 
+04/28/2020, 02:11:05 epoch: 189; train_loss: 0.02833; vld_loss: 0.05546; score: 0.93364 in 127.60s 
+04/28/2020, 02:13:07 epoch: 190; train_loss: 0.02838; vld_loss: 0.05558; score: 0.93358 in 121.57s 
+04/28/2020, 02:15:12 epoch: 191; train_loss: 0.02842; vld_loss: 0.05560; score: 0.93350 in 125.05s 
+04/28/2020, 02:17:11 epoch: 192; train_loss: 0.02834; vld_loss: 0.05564; score: 0.93347 in 119.34s 
+04/28/2020, 02:19:13 epoch: 193; train_loss: 0.02834; vld_loss: 0.05561; score: 0.93351 in 121.52s 
+04/28/2020, 02:21:13 epoch: 194; train_loss: 0.02835; vld_loss: 0.05559; score: 0.93358 in 120.68s 
+04/28/2020, 02:23:14 epoch: 195; train_loss: 0.02832; vld_loss: 0.05558; score: 0.93364 in 120.39s 
+04/28/2020, 02:25:13 epoch: 196; train_loss: 0.02830; vld_loss: 0.05558; score: 0.93359 in 119.65s 
+04/28/2020, 02:27:16 epoch: 197; train_loss: 0.02829; vld_loss: 0.05573; score: 0.93344 in 122.77s 
+04/28/2020, 02:29:16 epoch: 198; train_loss: 0.02829; vld_loss: 0.05563; score: 0.93357 in 120.29s 
+04/28/2020, 02:31:20 epoch: 199; train_loss: 0.02836; vld_loss: 0.05566; score: 0.93356 in 124.15s 
+04/28/2020, 02:31:20 Get subs ... 
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/home/youhanlee/anaconda3/envs/lyh/lib/python3.7/site-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+Traceback (most recent call last):
+  File "src.py", line 659, in <module>
+    main()
+  File "src.py", line 656, in main
+    train(args)
+  File "src.py", line 569, in train
+    test_dataset = IonTestDataset(test.transpose((0, 2, 1)), test_feats.values)
+NameError: name 'test_feats' is not defined
